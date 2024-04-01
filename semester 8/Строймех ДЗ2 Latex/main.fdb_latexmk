@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1711950200 "main.xdv" "main.pdf" "main" 1711950202 0
-  "main.xdv" 1711950199 34756 a2f94160e9587bcee99368ee8a219d11 "xelatex"
+["xdvipdfmx"] 1711964215 "main.xdv" "main.pdf" "main" 1711964217 0
+  "main.xdv" 1711964214 49556 646f8bcb3edec1bff08248058a3b48a7 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1711950183 "d:/LaTex projects/semester 8/Строймех ДЗ2 Latex/main.tex" "main.xdv" "main" 1711950202 0
+["xelatex"] 1711964199 "d:/LaTex projects/semester 8/Строймех ДЗ2 Latex/main.tex" "main.xdv" "main" 1711964217 0
   "C:/Users/Александр/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1696529051 37437812 652f4bb97b51922ab60c116992bbb871 ""
   "D:/Programs/LaTex/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136761454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "D:/Programs/LaTex/fonts/tfm/jknappen/ec/tcrm0500.tfm" 993062506 1452 d4e3b17acac08070a568f62f3c020c49 ""
@@ -129,16 +129,16 @@
   "D:/Programs/LaTex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "D:/Programs/LaTex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "d:/LaTex projects/semester 8/Строймех ДЗ2 Latex/main.tex" 1710600852 150 c400387a7c0eca3ae4a09e85647da585 ""
-  "main.aux" 1711950199 3501 d58873fe516411a51643e7a9874c36cb "xelatex"
-  "main.out" 1711950199 262 19e1bc22afe177713882e290576c009d "xelatex"
+  "main.aux" 1711964214 4125 f7086e099a3f58ba95c041172f64d979 "xelatex"
+  "main.out" 1711964214 262 19e1bc22afe177713882e290576c009d "xelatex"
   "main.tex" 1710600852 150 c400387a7c0eca3ae4a09e85647da585 ""
-  "mainpart.tex" 1711950183 7390 c4b88af9425dc84bbbff5995559c9d18 ""
+  "mainpart.tex" 1711964198 11503 7e48f9609963beed677e903f28ed4cd5 ""
   "preamble.tex" 1709450831 3813 30d203b1821b69c7bf5ddbd956cfba9a ""
-  "titlepage.aux" 1711950194 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
+  "titlepage.aux" 1711964208 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
   "titlepage.tex" 1710600875 2497 f32a16e0ea87f9f7971d9af331ed8c24 ""
   "Рисунки/pic1.PNG" 1709392716 14774 23dc465e548a9a0aa0d911df82c57660 ""
-  "Рисунки/pic2.PNG" 1710684538 25127 40634dc6c54e5673de18b0099039d096 ""
-  "Рисунки/pic3.PNG" 1710684549 23609 7a860f007ea0ab4f46a0164973364171 ""
+  "Рисунки/pic2.PNG" 1711962680 21302 c0ba917e3229b4c8a18df605750198f0 ""
+  "Рисунки/pic3.PNG" 1711962709 19565 90fb88b574ed4faf12b0f9a0734cab03 ""
   "Рисунки/pic4.PNG" 1710687672 25059 7291075dc7735f5fb941d5521bb169af ""
   "Рисунки/Герб МГТУ.png" 1696674641 116106 60599dd24c3b7f9f708464b075fdafb6 ""
   (generated)
