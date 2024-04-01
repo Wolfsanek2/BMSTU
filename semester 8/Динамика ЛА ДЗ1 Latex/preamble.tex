@@ -1,0 +1,86 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{extsizes} % Вроде как для 14 шрифта
+\usepackage{mathtext}
+
+\usepackage{geometry} % отступы
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+\geometry{left=2.5cm}
+\geometry{right=1.5cm}
+
+\linespread{1.33} % 1.33 - полуторный межстрочный интервал
+
+\usepackage{polyglossia} % для работы с языками
+\setdefaultlanguage{russian}
+
+\setmainfont[Ligatures={TeX}]{Times New Roman} % шрифт по умолчанию
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools} %пакеты от американского математического общества
+
+\RequirePackage{amsmath,amssymb,latexsym}
+
+\usepackage{graphicx} % для картинок
+\graphicspath{{./Рисунки/}} % Папка с картинками
+
+\usepackage[tableposition=top]{caption} % Для подписей рисунков и таблиц
+\DeclareCaptionLabelSeparator{defffis}{ ~---~ }
+\DeclareCaptionLabelFormat{gostfigure}{Рисунок #2}
+\DeclareCaptionLabelFormat{gosttable}{Таблица #2}
+\captionsetup[figure]{justification=centering, labelsep=defffis, format=plain}
+\captionsetup[table]{justification=raggedright, labelsep=defffis, format=plain, singlelinecheck=false}
+\captionsetup[figure]{labelformat = gostfigure}
+\captionsetup[table]{labelformat = gosttable}
+
+
+
+\usepackage{setspace} % Изменение межстрочного интервала
+\usepackage{float} % Для использования [H] при вставке картинок
+\usepackage{tabularx} % Таблицы с автоматической шириной столбцов
+\usepackage{multirow} % Для объединения строк в таблице
+\usepackage{gensymb} % Для математических символов, включая градус
+\usepackage{textcomp} % Для градусов
+
+\usepackage{hyperref} % Для гиперссылок
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+}
+
+% \usepackage{ulem} % Для подчеркиваний
+
+\AtBeginDocument{\numberwithin{equation}{section}}
+\AtBeginDocument{\numberwithin{table}{section}}
+\AtBeginDocument{\numberwithin{figure}{section}}
+
+\usepackage{sectsty} % Для настройки шрифта заголовков
+\allsectionsfont{\singlespacing} % Одинарный интервал в заголовках
+
+\setlength{\parindent}{5ex} % Абзацный отступ 5 символов
+\usepackage{indentfirst} % Для абзацного отступа в первой абзаце после заголовка
+
+% Настройка заголовков
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont \Large}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize \large}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize}{\thesubsubsection}{1em}{}
+% Настройка горизонтальных отступов заголовков
+\titlespacing*{\section}{\parindent}{*4}{*4}
+\titlespacing*{\subsection}{\parindent}{*4}{*4}
+\titlespacing*{\subsubsection}{\parindent}{*4}{*4}
+
+%Это чтобы сделать красивое оглавление
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{0em}{1.25em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{1.25em}{1.75em}}
+\renewcommand{\l@subsubsection}{\@dottedtocline{3}{2.75em}{2.6em}}
+\makeatother
+
+\setlength{\belowcaptionskip}{-16pt} % Уменьшение расстояние между подписью и русунком
+
+\renewcommand{\t}{\text}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+
+\def \tabfrac#1#2{\displaystyle \frac{\strut #1}{\strut #2}}
+\def \matrfrac#1#2{\displaystyle \frac{#1}{#2}}
