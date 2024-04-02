@@ -271,6 +271,8 @@ INPUT .\mainpart.tex
 INPUT mainpart.tex
 INPUT .\Рисунки\pic1.PNG
 INPUT .\Рисунки\pic1.PNG
+INPUT .\Рисунки\pic2.PNG
+INPUT .\Рисунки\pic2.PNG
 INPUT main.aux
 INPUT .\titlepage.aux
 INPUT .\titlepage.aux
