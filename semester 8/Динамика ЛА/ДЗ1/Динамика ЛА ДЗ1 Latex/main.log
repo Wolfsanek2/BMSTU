@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  30 MAR 2024 21:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  2 APR 2024 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Александр/Desktop/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex"
-(c:/Users/Александр/Desktop/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex
+**"d:/BMSTU github/semester 8/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex"
+(d:/BMSTU github/semester 8/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (preamble.tex (D:\Programs\LaTex\tex/latex/base\article.cls
@@ -898,12 +898,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4373868435D1F6C87EBFC4E7DF429E64;99.
  ) 
 Here is how much of TeX's memory you used:
- 17136 strings out of 410378
- 333172 string characters out of 5793511
+ 17137 strings out of 410378
+ 333178 string characters out of 5793511
  1923416 words of memory out of 5000000
- 38188 multiletter control sequences out of 15000+600000
+ 38189 multiletter control sequences out of 15000+600000
  569216 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,15n,120p,608b,566s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (6 pages, 45572 bytes).
+Output written on main.xdv (6 pages, 46524 bytes).
