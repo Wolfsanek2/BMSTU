@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1712126462 "main.xdv" "main.pdf" "main" 1712126463 0
-  "main.xdv" 1712126462 55300 b48f2bad52a81864f80bbe3ee9022c0c "xelatex"
+["xdvipdfmx"] 1712129198 "main.xdv" "main.pdf" "main" 1712129201 0
+  "main.xdv" 1712129198 55296 70c74cb6f88b3e90acdbacd8958f36b1 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1712126447 "d:/BMSTU github/semester 8/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex" "main.xdv" "main" 1712126463 0
+["xelatex"] 1712129177 "d:/BMSTU github/semester 8/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex" "main.xdv" "main" 1712129201 0
   "C:/Users/Александр/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1696529051 37437812 652f4bb97b51922ab60c116992bbb871 ""
   "D:/Programs/LaTex/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136761454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "D:/Programs/LaTex/fonts/tfm/jknappen/ec/tcrm0500.tfm" 993062506 1452 d4e3b17acac08070a568f62f3c020c49 ""
@@ -129,12 +129,12 @@
   "D:/Programs/LaTex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "D:/Programs/LaTex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "d:/BMSTU github/semester 8/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex" 1711269886 149 82231cb20d72fcab1477903196eeb416 ""
-  "main.aux" 1712126462 4142 b4ce2dec4c3b0e1b9443e71136c13c0f "xelatex"
-  "main.out" 1712126462 830 a2e85de4c4ab98758f303d4ea69658fc "xelatex"
+  "main.aux" 1712129198 4142 b4ce2dec4c3b0e1b9443e71136c13c0f "xelatex"
+  "main.out" 1712129198 830 a2e85de4c4ab98758f303d4ea69658fc "xelatex"
   "main.tex" 1711269886 149 82231cb20d72fcab1477903196eeb416 ""
-  "mainpart.tex" 1712126430 10872 281d535c61983cfac1b5f1d0613f3e23 ""
+  "mainpart.tex" 1712129172 10864 f42a487aa329c03c4bb1ae6cfcf84aab ""
   "preamble.tex" 1709450831 3813 30d203b1821b69c7bf5ddbd956cfba9a ""
-  "titlepage.aux" 1712126455 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
+  "titlepage.aux" 1712129189 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
   "titlepage.tex" 1711269800 2472 5c79260cc74e893ccc359cbe42b40792 ""
   "Рисунки/pic1.PNG" 1711270068 77686 8f4c920277c22ba89bc5900cb23294a4 ""
   "Рисунки/pic2.PNG" 1712085816 21502 d6972af54034d263381819baeba16f13 ""
