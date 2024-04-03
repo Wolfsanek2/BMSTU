@@ -191,7 +191,7 @@
         \\
         u_2(L) = p_{21} u_1(0) + p_{22} u_2(0)
         \\
-        0 = p_{31} u_1(0) + p_{42} u_2(0)
+        0 = p_{31} u_1(0) + p_{32} u_2(0)
         \\
         0 = p_{41} u_1(0) + p_{42} u_2(0)
     \end{cases}
@@ -219,4 +219,50 @@
         \\
         \displaystyle \omega_2 = 43.476 \; \frac{\t{рад}}{\t{с}}
     \end{cases}
+\end{equation}
+
+\section{Построение эпюр формы упругой линии и угла поворота сечений для каждого тона колебаний}
+
+Из системы уравнений (\ref{eq16}) получим:
+\begin{equation}
+    \label{eq19}
+    u_2(0) = - \frac{p_{31}(\omega_n)}{p_{32}(\omega_n)} u_1(0)
+\end{equation}
+
+Положим $u_{11}(0) = 0$, тогда вектор формы в начале первого участка будет иметь вид:
+\begin{equation}
+    \label{eq20}
+    \overline{u}_1(0) =
+    \begin{bmatrix}
+        0
+        \\
+        \displaystyle - \frac{p_{31}(\omega_n)}{p_{32}(\omega_n)} u_1(0)
+        \\
+        0
+        \\
+        0
+    \end{bmatrix}
+\end{equation}
+
+Форма собственных колебаний имеет вид:
+\begin{equation}
+    \label{eq21}
+    f_n(x) = p_{11}(x) u_1(0) + p_{12}(x) u_2(0)
+\end{equation}
+
+С учетом (\ref{eq19}) выражение (\ref{eq21}) можно записать в виде:
+\begin{equation}
+    \label{eq22}
+    f_n(x) = p_{11}(x) - \frac{p_{31}(\omega_n)}{p_{32}(\omega_n)} p_{12}(x)
+\end{equation}
+
+Форма угла поворота имеет вид:
+\begin{equation}
+    \label{eq23}
+    u_2(x) = p_{21}(x) u_1(0) + p_{22}(x) u_2(0)
+\end{equation}
+или:
+\begin{equation}
+    \label{eq24}
+    u_2(x) = p_{21}(x) - \frac{p_{31}(\omega_n)}{p_{32}(\omega_n)} p_{22}(x)
 \end{equation}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  2 APR 2024 22:33
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  3 APR 2024 09:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -827,7 +827,7 @@ File: ./Рисунки/pic1.PNG Graphic file (type bmp)
 ] [3] [4] [5]
 File: ./Рисунки/pic2.PNG Graphic file (type bmp)
 <./Рисунки/pic2.PNG>
-)
+ [6])
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -888,7 +888,7 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {ru-luna1918/options}  =>  {spelling=modern}
 >  {ru-petr1708/target}  =>  {russian}
 >  {ru-petr1708/options}  =>  {spelling=old}.
- [6] (main.aux (titlepage.aux))
+ [7] (main.aux (titlepage.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -898,15 +898,15 @@ L3 programming layer <2023-08-29>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4373868435D1F6C87EBFC4E7DF429E64;99.
+(rerunfilecheck)             Checksum: A2E85DE4C4AB98758F303D4EA69658FC;830.
  ) 
 Here is how much of TeX's memory you used:
- 17156 strings out of 410378
- 333507 string characters out of 5793511
+ 17162 strings out of 410378
+ 333543 string characters out of 5793511
  1923416 words of memory out of 5000000
- 38207 multiletter control sequences out of 15000+600000
+ 38213 multiletter control sequences out of 15000+600000
  569216 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,15n,120p,608b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,15n,120p,828b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (6 pages, 48312 bytes).
+Output written on main.xdv (7 pages, 55300 bytes).
