@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1710742990 "main.xdv" "main.pdf" "main" 1710742992 0
-  "main.xdv" 1710742990 97600 76a2c87ad785eb36e90d56ff3704443c "xelatex"
+["xdvipdfmx"] 1712556463 "main.xdv" "main.pdf" "main" 1712556465 0
+  "main.xdv" 1712556463 97588 a0f3e8ee130afe87c4a99e907ac1d850 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1710742963 "c:/Users/Александр/Desktop/ПЛА с ЖРД/ДЗ1/ПЛА с ЖРД Latex/main.tex" "main.xdv" "main" 1710742992 0
+["xelatex"] 1712556444 "d:/BMSTU github/semester 8/ПЛА с ЖРД/ДЗ1/ПЛА с ЖРД ДЗ1 Latex/main.tex" "main.xdv" "main" 1712556465 0
   "C:/Users/Александр/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1696529051 37437812 652f4bb97b51922ab60c116992bbb871 ""
   "D:/Programs/LaTex/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136761454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "D:/Programs/LaTex/fonts/tfm/jknappen/ec/tcrm0500.tfm" 993062506 1452 d4e3b17acac08070a568f62f3c020c49 ""
@@ -128,13 +128,13 @@
   "D:/Programs/LaTex/tex/latex/tools/tabularx.sty" 1686255640 7147 d80d8cf72d313443d08c13c1af59c90f ""
   "D:/Programs/LaTex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "D:/Programs/LaTex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/Александр/Desktop/ПЛА с ЖРД/ДЗ1/ПЛА с ЖРД Latex/main.tex" 1709908106 149 82231cb20d72fcab1477903196eeb416 ""
-  "main.aux" 1710742990 10321 db35ea4ff85ce2ba9194980210349e64 "xelatex"
-  "main.out" 1710742990 1940 af1bac017f365f1213e737662f121aa1 "xelatex"
+  "d:/BMSTU github/semester 8/ПЛА с ЖРД/ДЗ1/ПЛА с ЖРД ДЗ1 Latex/main.tex" 1709908106 149 82231cb20d72fcab1477903196eeb416 ""
+  "main.aux" 1712556462 10321 db35ea4ff85ce2ba9194980210349e64 "xelatex"
+  "main.out" 1712556463 1940 af1bac017f365f1213e737662f121aa1 "xelatex"
   "main.tex" 1709908106 149 82231cb20d72fcab1477903196eeb416 ""
-  "mainpart.tex" 1710742961 21133 8e16b73bcd079482a3150004be7b3a2f ""
+  "mainpart.tex" 1712556437 21131 135777e02c1eafe212ef2527e029cad4 ""
   "preamble.tex" 1709908732 3859 d680e1f55adebcf4deedf1fcc4e6460f ""
-  "titlepage.aux" 1710742975 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
+  "titlepage.aux" 1712556453 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
   "titlepage.tex" 1709906982 2553 29733a1e0c350acd1cab874f6e0e7fc5 ""
   "Рисунки/pic1.PNG" 1709909903 17283 bd67d2bdf50317f453e604cfa29629c7 ""
   "Рисунки/pic2.PNG" 1709920259 11390 dbc076cd083ded22d6f39e7e8af61410 ""
