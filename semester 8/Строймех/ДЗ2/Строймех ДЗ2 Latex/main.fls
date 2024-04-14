@@ -1,6 +1,6 @@
-PWD d:\LaTex projects\semester 8\Строймех ДЗ2 Latex
+PWD d:\BMSTU github\semester 8\Строймех\ДЗ2\Строймех ДЗ2 Latex
 INPUT C:\Users\Александр\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
-INPUT d:\LaTex projects\semester 8\Строймех ДЗ2 Latex\main.tex
+INPUT d:\BMSTU github\semester 8\Строймех\ДЗ2\Строймех ДЗ2 Latex\main.tex
 OUTPUT main.log
 INPUT .\preamble.tex
 INPUT .\preamble.tex

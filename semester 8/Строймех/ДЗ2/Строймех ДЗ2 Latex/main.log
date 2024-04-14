@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  1 APR 2024 12:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  14 APR 2024 13:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/LaTex projects/semester 8/Строймех ДЗ2 Latex/main.tex"
-(d:/LaTex projects/semester 8/Строймех ДЗ2 Latex/main.tex
+**"d:/BMSTU github/semester 8/Строймех/ДЗ2/Строймех ДЗ2 Latex/main.tex"
+(d:/BMSTU github/semester 8/Строймех/ДЗ2/Строймех ДЗ2 Latex/main.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (preamble.tex (D:\Programs\LaTex\tex/latex/base\article.cls
@@ -824,7 +824,12 @@ File: ./Рисунки/pic1.PNG Graphic file (type bmp)
  [2
 
 
-] [3] [4]
+] [3]
+Overfull \hbox (2.80237pt too wide) detected at line 208
+[][][]\OML/TimesNewRoman(0)/m/up/12 B[] \OT1/cmr/m/n/12 = [] [] = [] [] [] [] \OML/TimesNewRoman(0)/m/up/12 n^^Y
+ []
+
+[4]
 File: ./Рисунки/pic2.PNG Graphic file (type bmp)
 <./Рисунки/pic2.PNG>
 File: ./Рисунки/pic3.PNG Graphic file (type bmp)
@@ -832,7 +837,7 @@ File: ./Рисунки/pic3.PNG Graphic file (type bmp)
  [5]
 File: ./Рисунки/pic4.PNG Graphic file (type bmp)
 <./Рисунки/pic4.PNG>
- [6])
+)
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -893,7 +898,7 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {ru-luna1918/options}  =>  {spelling=modern}
 >  {ru-petr1708/target}  =>  {russian}
 >  {ru-petr1708/options}  =>  {spelling=old}.
- [7] (main.aux (titlepage.aux))
+ [6] (main.aux (titlepage.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -906,12 +911,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 19E1BC22AFE177713882E290576C009D;262.
  ) 
 Here is how much of TeX's memory you used:
- 17182 strings out of 410378
- 333756 string characters out of 5793511
+ 17180 strings out of 410378
+ 333778 string characters out of 5793511
  1938416 words of memory out of 5000000
- 38233 multiletter control sequences out of 15000+600000
+ 38231 multiletter control sequences out of 15000+600000
  569200 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,22n,120p,591b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,22n,120p,602b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (7 pages, 49556 bytes).
+Output written on main.xdv (6 pages, 48140 bytes).

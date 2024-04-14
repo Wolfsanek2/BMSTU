@@ -117,39 +117,48 @@
     m = 0
 \end{equation}
 
-Распределим сосредоточенную нагрузку $q_0R$:
+Распределим сосредоточенную нагрузку $q_0R$ по некоторому малому угловому сектору $\Delta\phi$:
 \begin{equation}
-    \label{eq9}
-    q_{ti} = \frac{q_0R}{\pi R} \left[ \frac{1}{2} + \sum_{n = 1}^{\infty} \left( \cos n (\phi - \phi_0) \right) \right]
-\end{equation}
-\begin{equation}
-    \label{eq10}
-    q_{t1} = -\frac{q_0}{\pi} \left[ \frac{1}{2} + \sum_{n = 1}^{\infty} \left( \cos n (\phi - \frac{\pi}{2}) \right) \right]
-\end{equation}
-\begin{equation}
-    \label{eq11}
-    q_{t2} = \frac{q_0}{\pi} \left[ \frac{1}{2} + \sum_{n = 1}^{\infty} \left( \cos n (\phi + \frac{\pi}{2}) \right) \right]
-\end{equation}
-
-Получим:
-\begin{equation}
-    \label{eq12}
-    \begin{split}
-        q_t & = \frac{4q_0}{\pi} \sin \phi - \frac{q_0}{\pi} \left[ \frac{1}{2} + \sum_{n = 1}^{\infty} \left( \cos n (\phi - \frac{\pi}{2}) \right) \right] + \frac{q_0}{\pi} \left[ \frac{1}{2} + \sum_{n = 1}^{\infty} \left( \cos n (\phi + \frac{\pi}{2}) \right) \right] =
-        \\
-        & = \frac{q_0}{\pi} \left( 4 \sin \phi + \sum_{n = 1}^{\infty} \left( -\cos n \frac{\pi}{2} \cos n \phi - \sin n \frac{\pi}{2} \sin n \phi + \cos n \frac{\pi}{2} \cos n \phi - \sin n \frac{\pi}{2} \sin n \phi \right) \right) =
-        \\
-        & = \frac{q_0}{\pi} \left( 4 \sin \phi - 2\sum_{n = 1}^{\infty} \sin\frac{\pi n}{2} \sin n \phi \right)
-    \end{split}
+    \label{eq8.1}
+    q_{ti} = \frac{q_0R}{R \Delta \phi} = \frac{q_0}{\Delta \phi}
 \end{equation}
 
 Получим следующие выражения для коэффициентов (\ref{eq4}) и (\ref{eq5}):
+\begin{equation}
+    \label{eq8.2}
+    \begin{split}
+        a_0'' & = \frac{1}{2\pi} \int_{0}^{2\pi} q_t d\phi = \frac{1}{2\pi} \left(   \int_{0}^{2\pi} \frac{4q_0}{\pi}\sin \phi d\phi - \int_{\frac{\pi}{2} - \frac{\Delta\phi}{2}}^{\frac{\pi}{2} + \frac{\Delta\phi}{2}}\frac{q_0}{\Delta \phi} d\phi + \int_{\frac{3\pi}{2} - \frac{\Delta\phi}{2}}^{\frac{3\pi}{2} + \frac{\Delta\phi}{2}} \frac{q_0}{\Delta \phi} d\phi \right) =
+        \\
+        & = \frac{1}{2\pi} \left( 0 - q_0 + q_0 \right) = 0
+    \end{split}
+\end{equation}
+\begin{equation}
+    \label{eq8.3}
+    \begin{split}
+        a_n'' & = \frac{1}{\pi} \left( \int_{0}^{2\pi} \frac{4q_0}{\pi}\sin \phi \cos n\phi d\phi - \int_{\frac{\pi}{2} - \frac{\Delta\phi}{2}}^{\frac{\pi}{2} + \frac{\Delta\phi}{2}}\frac{q_0}{\Delta \phi} \cos n\phi d\phi + \int_{\frac{3\pi}{2} - \frac{\Delta\phi}{2}}^{\frac{3\pi}{2} + \frac{\Delta\phi}{2}}\frac{q_0}{\Delta \phi} \cos n\phi d\phi \right) = 
+        \\
+        & = \frac{1}{\pi} \left( 0 - q_0 \cos \frac{n\pi}{2} + q_0 \cos \frac{3n\pi}{2} \right) = - \frac{2q_0}{\pi} \sin n\pi \sin \frac{n\pi}{2}
+    \end{split}
+\end{equation}
+\begin{equation}
+    \label{eq8.4}
+    \begin{split}
+        b_n'' & = \frac{1}{\pi} \left( \int_{0}^{2\pi} \frac{4q_0}{\pi}\sin \phi \sin n\phi d\phi - \int_{\frac{\pi}{2} - \frac{\Delta\phi}{2}}^{\frac{\pi}{2} + \frac{\Delta\phi}{2}}\frac{q_0}{\Delta \phi} \sin n\phi d\phi + \int_{\frac{3\pi}{2} - \frac{\Delta\phi}{2}}^{\frac{3\pi}{2} + \frac{\Delta\phi}{2}}\frac{q_0}{\Delta \phi} \sin n\phi d\phi \right) = 
+        \\
+        & = 
+        \begin{cases}
+            \displaystyle \frac{1}{\pi} \left( 0 - q_0 \sin \frac{n\pi}{2} + q_0 \sin \frac{3n\pi}{2} \right) = \frac{2q_0}{\pi} \sin \frac{n\pi}{2} \cos n\pi, \; n \neq 1
+            \\[10pt]
+            \displaystyle \frac{1}{\pi} \left( \frac{4q_0}{\pi} \cdot \pi - q_0 \sin \frac{\pi}{2} + q_0 \sin \frac{3\pi}{2} \right) = \frac{q_0}{\pi} \left( 4 - 1 - 1 \right) = \frac{2q_0}{\pi}, \; n = 1
+        \end{cases}
+    \end{split}
+\end{equation}
 \begin{equation}
     \label{eq12.1}
     \begin{split}
         a_n' & = \frac{1}{\pi} \left( \int_{0}^{\frac{\pi}{2}} q_0 \cos n\phi d\phi + \int_{\frac{3\pi}{2}}^{2\pi} q_0\cos n\phi d\phi \right) = \frac{q_0}{\pi n} \left( \sin n \phi \big|_{0}^{\frac{\pi}{2}} + \sin n \phi \big|_{\frac{3\pi}{2}}^{2\pi} \right) = 
         \\
-        & = \frac{q_0}{\pi n} \left( \sin \frac{\pi n}{2} - \sin \frac{3\pi n}{2} \right) = \frac{2q_0}{\pi n} \sin \frac{\pi n}{2}
+        & = \frac{q_0}{\pi n} \left( \sin \frac{\pi n}{2} - \sin \frac{3\pi n}{2} \right) = - \frac{2q_0}{\pi n} \sin \frac{\pi n}{2} \cos n\pi
     \end{split}
 \end{equation}
 \begin{equation}
@@ -157,32 +166,7 @@
     \begin{split}
         b_n' & = \frac{1}{\pi} \left( \int_{0}^{\frac{\pi}{2}} q_0 \sin n\phi d\phi + \int_{\frac{3\pi}{2}}^{2\pi} q_0 \sin n\phi d\phi \right) = -\frac{q_0}{\pi n} \left( \cos n\phi \big|_{0}^{\frac{\pi}{2}} + \cos n\phi \big|_{\frac{3\pi}{2}}^{2\pi} \right) =
         \\
-        & = -\frac{q_0}{\pi n} \left( \cos \frac{\pi n}{2} - 1 + 1 - \cos \frac{3\pi n}{2} \right) = -\frac{q_0}{\pi n} \left( \cos \frac{\pi n}{2} - \cos \frac{\pi n}{2} \right) = 0
-    \end{split}
-\end{equation}
-\begin{equation}
-    \label{eq12.3}
-    \begin{split}
-        a_n'' & = \frac{1}{\pi} \int_{0}^{2\pi} \frac{q_0}{\pi} \left( 4\sin \phi - 2 \sum_{k=1}^{\infty} \sin \frac{\pi k}{2} \sin k\phi \right) \cos n\phi d\phi =
-        \\
-        & = \frac{q_0}{\pi^2} \left( 4\int_{0}^{2\pi} \sin\phi \cos n\phi d\phi - 2\sum_{k=1}^{\infty} \sin \frac{\pi k}{2} \int_{0}^{2\pi} \sin k\phi \cos n\phi d\phi \right) = 0
-    \end{split}
-\end{equation}
-\begin{equation}
-    \label{eq12.4}
-    \begin{split}
-        b_n'' & = \frac{1}{\pi} \int_{0}^{2\pi} \frac{q_0}{\pi} \left( 4\sin \phi - 2 \sum_{k=1}^{\infty} \sin \frac{\pi k}{2} \sin k\phi \right) \sin n\phi d\phi =
-        \\
-        & = \frac{q_0}{\pi^2} \left( 4\int_{0}^{2\pi} \sin\phi \sin n\phi d\phi - 2\sum_{k=1}^{\infty} \sin \frac{\pi k}{2} \int_{0}^{2\pi} \sin k\phi \sin n\phi d\phi \right) = 
-        \\
-        & = \frac{q_0}{\pi^2} \left( 4\int_{0}^{2\pi} \sin \phi \sin n\phi d\phi - 2\sin \frac{\pi n}{2} \int_{0}^{2\pi} \sin^2 n\phi d\phi \right)
-        \\
-        & = 
-        \begin{cases}
-            \displaystyle \frac{q_0}{\pi^2} \left( 4\pi - 2\pi \sin \frac{\pi}{2} \right) = \frac{2q_0}{\pi}, \; n = 1
-            \\[10pt]
-            \displaystyle -\frac{2q_0}{\pi} \sin \frac{\pi n}{2}, \; n \neq 1
-        \end{cases}
+        & = -\frac{q_0}{\pi n} \left( \cos \frac{\pi n}{2} - 1 + 1 - \cos \frac{3\pi n}{2} \right) = - \frac{q_0}{\pi n} \sin \frac{n\pi}{2} \sin n\pi = 0
     \end{split}
 \end{equation}
 \begin{equation}
@@ -205,9 +189,11 @@
 \end{equation}
 \begin{equation}
     \label{eq12.5.2}
-    0 - 0 + 0 = 0
-    \\
-    \frac{4q_0}{\pi} - \frac{2q_0}{\pi} - \frac{2q_0}{\pi} = 0
+    \begin{cases}
+        & 0 - 0 + 0 = 0
+        \\[10pt]
+        & \displaystyle \frac{4q_0}{\pi} - \frac{2q_0}{\pi} - \frac{2q_0}{\pi} = 0
+    \end{cases}
 \end{equation}
 Условия (\ref{eq12.5.1}) выполняются, значит коэффициенты найдены правильно.
 
@@ -218,13 +204,13 @@
 \end{equation}
 \begin{equation}
     \label{eq12.7}
-    B_n = \frac{R^4}{EJn^2(n^2 - 1)^2} \left[ -\frac{2q_0}{\pi} \sin \frac{\pi n}{2} -n \frac{2q_0}{\pi n} \sin \frac{\pi n}{2} \right] = -\frac{4q_0R^4}{\pi EJn^2(n^2 - 1)^2} \sin \frac{\pi n}{2}
+    B_n = \frac{R^4}{EJn^2(n^2 - 1)^2} \left[ \frac{2q_0}{\pi} \sin \frac{\pi n}{2} \cos n\pi + n \frac{2q_0}{\pi n} \sin \frac{\pi n}{2} \cos n\pi \right] = \frac{4q_0R^4}{\pi EJn^2(n^2 - 1)^2} \sin \frac{\pi n}{2} \cos n\pi
 \end{equation}
 
 Получим следующее разложение функции касательных перемещений:
 \begin{equation}
     \label{eq12.8}
-    v = -\frac{4q_0R^4}{\pi EJ} \sum_{n=2}^{\infty} \frac{1}{n^2(n^2 - 1)^2} \sin \frac{\pi n}{2} \sin n\phi
+    v = \frac{4q_0R^4}{\pi EJ} \sum_{n=2}^{\infty} \frac{1}{n^2(n^2 - 1)^2} \sin \frac{\pi n}{2} \cos n\pi \sin n\phi
 \end{equation}
 
 Примем количество членов ряда (\ref{eq2}) равным $N = 50$. Построим эпюры перемещений и изгибающего момента:
@@ -239,7 +225,7 @@
 Найдем нормальные перемещения:
 \begin{equation}
     \label{eq13}
-    w = - \frac{dv}{d\phi} = \frac{4q_0R^4}{\pi EJ} \sum_{n=2}^{\infty} \frac{1}{n(n - 1)^2(n + 1)^2} \sin \frac{\pi n}{2} \cos(n \phi)
+    w = - \frac{dv}{d\phi} = - \frac{4q_0R^4}{\pi EJ} \sum_{n=2}^{\infty} \frac{1}{n(n - 1)^2(n + 1)^2} \sin \frac{\pi n}{2} \cos n\pi \cos(n \phi)
 \end{equation}
 
 \begin{figure}[H]
@@ -253,7 +239,7 @@
 Найдем изгибающий момент:
 \begin{equation}
     \label{eq14}
-    M = \frac{EJ}{R^2} \left(\frac{d^2 w}{d \phi^2} + w \right) = -\frac{4q_0R^2}{\pi} \sum_{n=2}^{\infty} \frac{1}{n(n^2 - 1)} \sin \frac{\pi n}{2} \cos n\phi
+    M = \frac{EJ}{R^2} \left(\frac{d^2 w}{d \phi^2} + w \right) = \frac{4q_0R^2}{\pi} \sum_{n=2}^{\infty} \frac{1}{n(n^2 - 1)} \sin \frac{\pi n}{2} \cos n\pi \cos n\phi
 \end{equation}
 
 \begin{figure}[H]

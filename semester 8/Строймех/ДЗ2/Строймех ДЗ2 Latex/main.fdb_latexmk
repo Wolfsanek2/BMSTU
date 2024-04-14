@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1711964215 "main.xdv" "main.pdf" "main" 1711964217 0
-  "main.xdv" 1711964214 49556 646f8bcb3edec1bff08248058a3b48a7 "xelatex"
+["xdvipdfmx"] 1713090407 "main.xdv" "main.pdf" "main" 1713090409 0
+  "main.xdv" 1713090407 48140 decb31796fca0442c150d7074e63a749 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1711964199 "d:/LaTex projects/semester 8/Строймех ДЗ2 Latex/main.tex" "main.xdv" "main" 1711964217 0
+["xelatex"] 1713090389 "d:/BMSTU github/semester 8/Строймех/ДЗ2/Строймех ДЗ2 Latex/main.tex" "main.xdv" "main" 1713090409 0
   "C:/Users/Александр/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1696529051 37437812 652f4bb97b51922ab60c116992bbb871 ""
   "D:/Programs/LaTex/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136761454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "D:/Programs/LaTex/fonts/tfm/jknappen/ec/tcrm0500.tfm" 993062506 1452 d4e3b17acac08070a568f62f3c020c49 ""
@@ -128,13 +128,13 @@
   "D:/Programs/LaTex/tex/latex/tools/tabularx.sty" 1686255640 7147 d80d8cf72d313443d08c13c1af59c90f ""
   "D:/Programs/LaTex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "D:/Programs/LaTex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "d:/LaTex projects/semester 8/Строймех ДЗ2 Latex/main.tex" 1710600852 150 c400387a7c0eca3ae4a09e85647da585 ""
-  "main.aux" 1711964214 4125 f7086e099a3f58ba95c041172f64d979 "xelatex"
-  "main.out" 1711964214 262 19e1bc22afe177713882e290576c009d "xelatex"
+  "d:/BMSTU github/semester 8/Строймех/ДЗ2/Строймех ДЗ2 Latex/main.tex" 1710600852 150 c400387a7c0eca3ae4a09e85647da585 ""
+  "main.aux" 1713090407 4006 912f3cc23aabe882bbd63924f56c2857 "xelatex"
+  "main.out" 1713090407 262 19e1bc22afe177713882e290576c009d "xelatex"
   "main.tex" 1710600852 150 c400387a7c0eca3ae4a09e85647da585 ""
-  "mainpart.tex" 1711964198 11503 7e48f9609963beed677e903f28ed4cd5 ""
+  "mainpart.tex" 1713090388 11259 686797f320f67d7a20dafba8d387adf0 ""
   "preamble.tex" 1709450831 3813 30d203b1821b69c7bf5ddbd956cfba9a ""
-  "titlepage.aux" 1711964208 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
+  "titlepage.aux" 1713090400 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
   "titlepage.tex" 1710600875 2497 f32a16e0ea87f9f7971d9af331ed8c24 ""
   "Рисунки/pic1.PNG" 1709392716 14774 23dc465e548a9a0aa0d911df82c57660 ""
   "Рисунки/pic2.PNG" 1711962680 21302 c0ba917e3229b4c8a18df605750198f0 ""
