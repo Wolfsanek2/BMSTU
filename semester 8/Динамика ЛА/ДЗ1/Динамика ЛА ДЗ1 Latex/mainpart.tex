@@ -113,11 +113,59 @@
     \item $u_{4i}(x) = EJ_i \cdot f'''_i(x)$ --- форма поперечного момента
 \end{itemize}
 
-Так как на стыках меняется только значения погонных масс и жесткостей, то условие стыка примет вид
+Так как на стыках меняются значения погонных масс и жесткостей и присутствуют сосредоточенные массы и момент инерции, то условие стыка примет вид
 \begin{equation}
     \label{eq7}
-    \overline{u}_i(l_i) = \overline{u}_{i+1}(0)
+    \overline{u}_{i+1}(0) = B_i \cdot \overline{u}_i(l_i)
 \end{equation}
+где матрица перехода $B_i$ имеет вид:
+\begin{itemize}
+    \item если отсутствуют масса и момент инерции:
+    \begin{equation}
+        \label{eq7.1}
+        B_i =
+        \begin{bmatrix}
+            1 & 0 & 0 & 0
+            \\
+            0 & 1 & 0 & 0
+            \\
+            0 & 0 & 1 & 0
+            \\
+            0 & 0 & 0 & 1
+            \\
+        \end{bmatrix}
+    \end{equation}
+    \item если присутствует только масса:
+    \begin{equation}
+        \label{eq7.2}
+        B_i =
+        \begin{bmatrix}
+            1 & 0 & 0 & 0
+            \\
+            0 & 1 & 0 & 0
+            \\
+            0 & 0 & 1 & 0
+            \\
+            M \omega^2 & 0 & 0 & 1
+            \\
+        \end{bmatrix}
+    \end{equation}
+    \item если присутствует масса и момент инерции:
+    \begin{equation}
+        \label{eq7.3}
+        B_i =
+        \begin{bmatrix}
+            1 & 0 & 0 & 0
+            \\
+            0 & 1 & 0 & 0
+            \\
+            0 & -J_0 \omega^2 & 1 & 0
+            \\
+            M \omega^2 & 0 & 0 & 1
+            \\
+        \end{bmatrix}
+    \end{equation}
+\end{itemize}
 
 Исходя из свойств функций Крылова, можно связать между собой вектор формы в любой точке участка с вектором формы в его начале. Это условие связи имеет вид
 \begin{equation}
@@ -142,19 +190,19 @@
 Из условия (\ref{eq7}) следует
 \begin{equation}
     \label{eq10}
-    \overline{u}_{i+1}(x) = A_{i+1}(x) \cdot A_i(l_i) \cdot\overline{u}_i(0)
+    \overline{u}_{i+1}(x) = A_{i+1}(x) \cdot B_i \cdot A_i(l_i) \cdot\overline{u}_i(0)
 \end{equation}
 
 Поэтому решение для произвольного участка можно выразить через вектор формы в начале первого участка:
 \begin{equation}
     \label{eq11}
-    \overline{u}_i(x) = A_i(x) \cdot \left( \prod_{j=1}^{i-1} A_j(l_j) \right) \cdot \overline{u}_1(0)
+    \overline{u}_i(x) = A_i(x) \cdot \left( \prod_{j=i-1}^{1} \left( B_j \cdot A_j(l_j) \right) \right) \cdot \overline{u}_1(0)
 \end{equation}
 
 Введем матрицу $P$:
 \begin{equation}
     \label{eq12}
-    P = \prod_{j=1}^{k} A_j(l_j)
+    P = \prod_{j=k}^{1} \left( B_j \cdot A_j(l_j) \right)
 \end{equation}
 
 Тогда выражение (\ref{eq11}) примет вид
@@ -215,9 +263,9 @@
 \begin{equation}
     \label{eq18}
     \begin{cases}
-        \displaystyle \omega_1 = 18.868 \; \frac{\t{рад}}{\t{с}}
-        \\
-        \displaystyle \omega_2 = 43.476 \; \frac{\t{рад}}{\t{с}}
+        \displaystyle \omega_1 = 4.573 \; \frac{\t{рад}}{\t{с}}
+        \\[10pt]
+        \displaystyle \omega_2 = 19.191 \; \frac{\t{рад}}{\t{с}}
     \end{cases}
 \end{equation}
 
@@ -270,28 +318,184 @@
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width = 0.7\linewidth]{pic3.PNG}
-        \caption{Форма колебаний для первого тона}
+        \caption{Форма колебаний}
         \label{pic3}
     \end{center}
 \end{figure}
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width = 0.7\linewidth]{pic4.PNG}
-        \caption{Форма колебаний для второго тона}
+        \caption{Форма угла поворота}
         \label{pic4}
     \end{center}
 \end{figure}
+
+\section{Построение эпюр изгибающих моментов и поперечных сил}
+
+Найдем форму изгибающего момента:
+\begin{equation}
+    \label{eq25}
+    M(x) = u_3(x) = p_{31} - \frac{p_{31}(L)}{p_{32}(L)} p_{32}(x)
+\end{equation}
+
+И форму поперечных сил:
+\begin{equation}
+    \label{eq26}
+    Q(x) = u_4(x) = p_{41}(x) - \frac{p_{31}(L)}{p_{32}(L)} p_{42}(x)
+\end{equation}
+
+Построим графики формы изгибающего момента и поперечных сил для первых двух собственных частот:
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width = 0.7\linewidth]{pic5.PNG}
-        \caption{Форма угла поворота для первого тона}
+        \caption{Форма изгибающего момента}
         \label{pic5}
     \end{center}
 \end{figure}
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width = 0.7\linewidth]{pic6.PNG}
-        \caption{Форма угла поворота для второго тона}
+        \caption{Форма поперечной силы}
         \label{pic6}
     \end{center}
 \end{figure}
+
+\section{Расчет полностью заправленной и <<сухой>> ракеты}
+
+\subsection{Расчет полностью заправленной ракеты}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic7.PNG}
+        \caption{График для определения собственных частот полностью заправленной ракеты}
+        \label{pic7}
+    \end{center}
+\end{figure}
+
+Первые две собственные частоты равны:
+\begin{equation}
+    \label{eq27}
+    \begin{cases}
+        \displaystyle \omega_1 = 3.338 \; \frac{\t{рад}}{\t{с}}
+        \\[10pt]
+        \displaystyle \omega_2 = 12.906 \; \frac{\t{рад}}{\t{с}}
+    \end{cases}
+\end{equation}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic8.PNG}
+        \caption{Форма колебаний заправленной ракеты}
+        \label{pic8}
+    \end{center}
+\end{figure}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic9.PNG}
+        \caption{Форма угла поворота заправленной ракеты}
+        \label{pic9}
+    \end{center}
+\end{figure}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic10.PNG}
+        \caption{Форма изгибающего момента заправленной ракеты}
+        \label{pic10}
+    \end{center}
+\end{figure}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic11.PNG}
+        \caption{Форма поперечной силы заправленной ракеты}
+        \label{pic11}
+    \end{center}
+\end{figure}
+
+\subsection{Расчет <<сухой>> ракеты}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic12.PNG}
+        \caption{График для определения собственных частот <<сухой>> ракеты}
+        \label{pic12}
+    \end{center}
+\end{figure}
+
+Первые две собственные частоты равны:
+\begin{equation}
+    \label{eq28}
+    \begin{cases}
+        \displaystyle \omega_1 = 5.826 \; \frac{\t{рад}}{\t{с}}
+        \\[10pt]
+        \displaystyle \omega_2 = 124.806 \; \frac{\t{рад}}{\t{с}}
+    \end{cases}
+\end{equation}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic13.PNG}
+        \caption{Форма колебаний <<сухой>> ракеты}
+        \label{pic13}
+    \end{center}
+\end{figure}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic14.PNG}
+        \caption{Форма угла поворота <<сухой>> ракеты}
+        \label{pic14}
+    \end{center}
+\end{figure}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic15.PNG}
+        \caption{Форма изгибающего момента <<сухой>> ракеты}
+        \label{pic15}
+    \end{center}
+\end{figure}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic16.PNG}
+        \caption{Форма поперечной силы <<сухой>> ракеты}
+        \label{pic16}
+    \end{center}
+\end{figure}
+
+\section{Расчет приведенных масс для расчетных случаев}
+
+Найдем приведенные массы по формуле:
+\begin{equation}
+    \label{eq29}
+    m_n = \int_{0}^{L} m(x) f_n^2(x) dx
+\end{equation}
+где $m(x)$ --- погонная масса, $f_n(x)$ --- форма колебаний.
+
+Найдем приведенные массы для расчетных случаев:
+\begin{itemize}
+    \item Заданный вариант ракеты:
+    \begin{equation}
+        \label{eq30}
+        \begin{cases}
+            m_1 = 970 \; \t{кг}
+            \\
+            m_2 = 2580 \; \t{кг}
+        \end{cases}
+    \end{equation}
+    \item Полностью заправленная ракета:
+    \begin{equation}
+        \label{eq31}
+        \begin{cases}
+            m_1 = 6436 \; \t{кг}
+            \\
+            m_2 = 797 \; \t{кг}
+        \end{cases}
+    \end{equation}
+    \item <<Сухая>> ракета:
+    \begin{equation}
+        \label{eq32}
+        \begin{cases}
+            m_1 = 262 \; \t{кг}
+            \\
+            m_2 = 898 \; \t{кг}
+        \end{cases}
+    \end{equation}
+\end{itemize}

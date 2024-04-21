@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  19 APR 2024 17:15
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  21 APR 2024 13:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -827,17 +827,46 @@ File: ./Рисунки/pic1.PNG Graphic file (type bmp)
 ] [3] [4] [5]
 File: ./Рисунки/pic2.PNG Graphic file (type bmp)
 <./Рисунки/pic2.PNG>
- [6]
+ [6] [7]
 File: ./Рисунки/pic3.PNG Graphic file (type bmp)
 <./Рисунки/pic3.PNG>
 File: ./Рисунки/pic4.PNG Graphic file (type bmp)
 <./Рисунки/pic4.PNG>
+
+Overfull \hbox (0.71315pt too wide) in paragraph at lines 333--333
+ |[]\TU/TimesNewRoman(1)/m/n/17.28 Построение эпюр изгибающих моментов и поперечных сил| 
+ []
+
+[8]
 File: ./Рисунки/pic5.PNG Graphic file (type bmp)
 <./Рисунки/pic5.PNG>
- [7]
 File: ./Рисунки/pic6.PNG Graphic file (type bmp)
 <./Рисунки/pic6.PNG>
-)
+File: ./Рисунки/pic7.PNG Graphic file (type bmp)
+<./Рисунки/pic7.PNG>
+ [9]
+File: ./Рисунки/pic8.PNG Graphic file (type bmp)
+<./Рисунки/pic8.PNG>
+File: ./Рисунки/pic9.PNG Graphic file (type bmp)
+<./Рисунки/pic9.PNG>
+File: ./Рисунки/pic10.PNG Graphic file (type bmp)
+<./Рисунки/pic10.PNG>
+ [10]
+File: ./Рисунки/pic11.PNG Graphic file (type bmp)
+<./Рисунки/pic11.PNG>
+File: ./Рисунки/pic12.PNG Graphic file (type bmp)
+<./Рисунки/pic12.PNG>
+ [11]
+File: ./Рисунки/pic13.PNG Graphic file (type bmp)
+<./Рисунки/pic13.PNG>
+File: ./Рисунки/pic14.PNG Graphic file (type bmp)
+<./Рисунки/pic14.PNG>
+File: ./Рисунки/pic15.PNG Graphic file (type bmp)
+<./Рисунки/pic15.PNG>
+ [12]
+File: ./Рисунки/pic16.PNG Graphic file (type bmp)
+<./Рисунки/pic16.PNG>
+ [13])
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -898,7 +927,7 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {ru-luna1918/options}  =>  {spelling=modern}
 >  {ru-petr1708/target}  =>  {russian}
 >  {ru-petr1708/options}  =>  {spelling=old}.
- [8] (main.aux (titlepage.aux))
+ [14] (main.aux (titlepage.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -908,15 +937,15 @@ L3 programming layer <2023-08-29>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A2E85DE4C4AB98758F303D4EA69658FC;830.
+(rerunfilecheck)             Checksum: 6207A08E19003AC24407962940660EDB;2681.
  ) 
 Here is how much of TeX's memory you used:
- 17210 strings out of 410378
- 334479 string characters out of 5793511
- 1923416 words of memory out of 5000000
- 38257 multiletter control sequences out of 15000+600000
+ 17345 strings out of 410378
+ 337036 string characters out of 5793511
+ 1925416 words of memory out of 5000000
+ 38382 multiletter control sequences out of 15000+600000
  569216 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,15n,120p,828b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,15n,120p,828b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (8 pages, 58736 bytes).
+Output written on main.xdv (14 pages, 84868 bytes).

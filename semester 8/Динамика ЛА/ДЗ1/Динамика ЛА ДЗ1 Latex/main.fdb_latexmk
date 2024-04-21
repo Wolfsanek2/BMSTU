@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1713536153 "main.xdv" "main.pdf" "main" 1713536156 0
-  "main.xdv" 1713536153 58736 38c07c89c13549f347c9ed208d587d4d "xelatex"
+["xdvipdfmx"] 1713695601 "main.xdv" "main.pdf" "main" 1713695603 0
+  "main.xdv" 1713695601 84868 7c5ea1f6049dbf5f03bf5665e588a4f6 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1713536135 "d:/BMSTU github/semester 8/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex" "main.xdv" "main" 1713536156 0
+["xelatex"] 1713695570 "d:/BMSTU github/semester 8/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex" "main.xdv" "main" 1713695603 0
   "C:/Users/Александр/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1696529051 37437812 652f4bb97b51922ab60c116992bbb871 ""
   "D:/Programs/LaTex/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136761454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "D:/Programs/LaTex/fonts/tfm/jknappen/ec/tcrm0500.tfm" 993062506 1452 d4e3b17acac08070a568f62f3c020c49 ""
@@ -129,19 +129,29 @@
   "D:/Programs/LaTex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "D:/Programs/LaTex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "d:/BMSTU github/semester 8/Динамика ЛА/ДЗ1/Динамика ЛА ДЗ1 Latex/main.tex" 1713536148 149 82231cb20d72fcab1477903196eeb416 ""
-  "main.aux" 1713536153 5710 d05227104ff2b8a7b30605c8e879bf61 "xelatex"
-  "main.out" 1713536153 830 a2e85de4c4ab98758f303d4ea69658fc "xelatex"
+  "main.aux" 1713695601 11900 d1f87f9b2db5b1666030cff11bd2e30d "xelatex"
+  "main.out" 1713695601 2681 6207a08e19003ac24407962940660edb "xelatex"
   "main.tex" 1713536148 149 82231cb20d72fcab1477903196eeb416 ""
-  "mainpart.tex" 1713536102 11801 c777f4b2db3aa53e1067696596d708c7 ""
+  "mainpart.tex" 1713695546 18445 4185fb22481b65c2367f4833bdbc4bd3 ""
   "preamble.tex" 1709450831 3813 30d203b1821b69c7bf5ddbd956cfba9a ""
-  "titlepage.aux" 1713536144 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
+  "titlepage.aux" 1713695582 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
   "titlepage.tex" 1711269800 2472 5c79260cc74e893ccc359cbe42b40792 ""
   "Рисунки/pic1.PNG" 1711270068 77686 8f4c920277c22ba89bc5900cb23294a4 ""
-  "Рисунки/pic2.PNG" 1712085816 21502 d6972af54034d263381819baeba16f13 ""
-  "Рисунки/pic3.PNG" 1712258480 10844 d23553fdae30804281c78a01b90c01c7 ""
-  "Рисунки/pic4.PNG" 1712258496 11662 84cffd26593636d42c8e82d397d45e73 ""
-  "Рисунки/pic5.PNG" 1712258519 11921 d067068b795f950d83881c696640e88c ""
-  "Рисунки/pic6.PNG" 1712258533 11930 c23e123479513633b963b7f2c428bfd6 ""
+  "Рисунки/pic10.PNG" 1713692334 17702 88bd117c50dddfee76be049be263c565 ""
+  "Рисунки/pic11.PNG" 1713692348 19932 1b25e8925ff718f311d212245f2806da ""
+  "Рисунки/pic12.PNG" 1713693769 14729 4a5699dbb9d31a988cd380b7f4c4c2ab ""
+  "Рисунки/pic13.PNG" 1713693786 14954 ffeaac52249b3e5326f9d325b7dd07f9 ""
+  "Рисунки/pic14.PNG" 1713693797 17112 cdf332270a807a0dc50dca25b003b2f0 ""
+  "Рисунки/pic15.PNG" 1713693817 19292 245e0c90a1c2a34bbaddf27ba2040dcb ""
+  "Рисунки/pic16.PNG" 1713693829 18539 9f3472bc62e998f11295e25130dde090 ""
+  "Рисунки/pic2.PNG" 1713692066 15338 8d9aafc0d6040b8be05178b895962af4 ""
+  "Рисунки/pic3.PNG" 1713692078 15631 c73f52f5a248f765adfc2f1bdfb9ed05 ""
+  "Рисунки/pic4.PNG" 1713692109 17156 f48a6c814103130d9a4b9cd13e5a6305 ""
+  "Рисунки/pic5.PNG" 1713692119 18354 c045cde96fbbb935057f4b33e4f1b81d ""
+  "Рисунки/pic6.PNG" 1713692131 19197 2c121ca69ccb5e524e8485c2bd902022 ""
+  "Рисунки/pic7.PNG" 1713692218 15695 f6adb7de750263ed5a397a6aa0540023 ""
+  "Рисунки/pic8.PNG" 1713692306 15248 7282107960f7d29ac872f21d29e90c92 ""
+  "Рисунки/pic9.PNG" 1713692320 17302 18fb48fc2d3758a97898c80c13d3abc1 ""
   "Рисунки/Герб МГТУ.png" 1696674641 116106 60599dd24c3b7f9f708464b075fdafb6 ""
   (generated)
   "main.aux"
