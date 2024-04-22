@@ -4,7 +4,7 @@
   (generated)
   "preamble.pdf"
   (rewritten before read)
-["xelatex"] 1713708970 "d:/BMSTU github/semester 8/Урматфиз/ДЗ/Урматфиз ДЗ Latex/preamble.tex" "preamble.xdv" "preamble" 1713708977 2
+["xelatex"] 1713769451 "d:/BMSTU github/semester 8/Урматфиз/ДЗ/Урматфиз ДЗ Latex/preamble.tex" "preamble.xdv" "preamble" 1713769456 2
   "C:/Users/Александр/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1696529051 37437812 652f4bb97b51922ab60c116992bbb871 ""
   "D:/Programs/LaTex/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136761454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "D:/Programs/LaTex/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -91,9 +91,9 @@
   "D:/Programs/LaTex/tex/latex/tools/tabularx.sty" 1686255640 7147 d80d8cf72d313443d08c13c1af59c90f ""
   "D:/Programs/LaTex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "D:/Programs/LaTex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "d:/BMSTU github/semester 8/Урматфиз/ДЗ/Урматфиз ДЗ Latex/preamble.tex" 1709450831 3813 30d203b1821b69c7bf5ddbd956cfba9a ""
-  "preamble.aux" 0 -1 0 "xelatex"
-  "preamble.tex" 1709450831 3813 30d203b1821b69c7bf5ddbd956cfba9a ""
+  "d:/BMSTU github/semester 8/Урматфиз/ДЗ/Урматфиз ДЗ Latex/preamble.tex" 1713769442 3833 c71b20ea931e08c9f73a92d3ea83b440 ""
+  "preamble.aux" 1713769451 34 3985256e7290058c681f74d7a3565a19 "xelatex"
+  "preamble.tex" 1713769442 3833 c71b20ea931e08c9f73a92d3ea83b440 ""
   (generated)
   "preamble.aux"
   "preamble.log"

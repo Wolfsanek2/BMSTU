@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  21 APR 2024 22:01
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.9.24) (preloaded format=xelatex 2023.10.5)  22 APR 2024 10:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -824,7 +824,12 @@ File: ./Рисунки/pic1.PNG Graphic file (type bmp)
  [2
 
 
-] [3] [4])
+] [3] [4] [5]
+Overfull \hbox (2.30118pt too wide) in paragraph at lines 255--256
+[]\TU/TimesNewRoman(1)/m/n/12 Для нахождения констант интегрирования воспользуемся граничными и начальными усло-
+ []
+
+[6] [7])
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -885,7 +890,7 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {ru-luna1918/options}  =>  {spelling=modern}
 >  {ru-petr1708/target}  =>  {russian}
 >  {ru-petr1708/options}  =>  {spelling=old}.
- [5] (main.aux (titlepage.aux))
+ [8] (main.aux (titlepage.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -898,12 +903,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5D451B9D9984E7AAC4B0C4F89EE835D0;660.
  ) 
 Here is how much of TeX's memory you used:
- 17152 strings out of 410378
- 333211 string characters out of 5793511
+ 17185 strings out of 410378
+ 333409 string characters out of 5793511
  1923416 words of memory out of 5000000
- 38204 multiletter control sequences out of 15000+600000
+ 38237 multiletter control sequences out of 15000+600000
  569216 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,10n,120p,600b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (5 pages, 41772 bytes).
+Output written on main.xdv (8 pages, 66256 bytes).

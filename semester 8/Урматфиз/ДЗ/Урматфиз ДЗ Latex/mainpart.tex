@@ -182,3 +182,174 @@
 
 \subsection{Решение}
 
+Решим дифференциальное уравнение
+\begin{equation}
+    \label{eq23}
+    \frac{\partial U}{\partial t} = a \frac{\partial^2 U}{\partial x^2}
+\end{equation}
+
+Воспользуемся методом разделения переменных Фурье:
+\begin{equation}
+    \label{eq24}
+    U(x, t) = X(x) \cdot T(t)
+\end{equation}
+
+Подставим (\ref{eq24}) в (\ref{eq23}):
+\begin{equation}
+    \label{eq25}
+    \frac{dT(t)}{dt} X(x) = a \frac{d^2 X(x)}{dx^2} T(t)
+\end{equation}
+\begin{equation}
+    \label{eq26}
+    \frac{dT(t)}{T(t) dt} \frac{1}{a} = \frac{1}{X(x)} \frac{dX^2(x)}{dx^2}
+\end{equation}
+
+Правая и левая часть (\ref{eq26}) не зависят друг от друга, поэтому по теореме Ляпунова их равенство достигается, когда левая и правая часть равны определенному числу:
+\begin{equation}
+    \label{eq27}
+    \frac{dT(t)}{T(t) dt} \frac{1}{a} = \frac{1}{X(x)} \frac{dX^2(x)}{dx^2} = - \lambda^2
+\end{equation}
+
+Получили два независимых дифференциальных уравнения. Решим их:
+\begin{equation}
+    \label{eq28}
+    \frac{dT(t)}{T(t) dt} \frac{1}{a} = - \lambda^2
+\end{equation}
+\begin{equation}
+    \label{eq29}
+    \frac{dT(t)}{T(t)} = - \lambda^2 a dt
+\end{equation}
+\begin{equation}
+    \label{eq30}
+    d \ln T(t) = - \lambda^2 a dt
+\end{equation}
+\begin{equation}
+    \label{eq31}
+    \ln T(t) = - \lambda^2 a t + C'
+\end{equation}
+\begin{equation}
+    \label{eq32}
+    T(t) = e^{- \lambda^2 a t + C'} = C e^{- \lambda^2 a t}
+\end{equation}
+
+Решим второе уравнение:
+\begin{equation}
+    \label{eq33}
+    \frac{1}{X(x)} \frac{dX^2(x)}{dx^2} = - \lambda^2
+\end{equation}
+\begin{equation}
+    \label{eq34}
+    \frac{dX^2(x)}{dx^2} + \lambda^2 X(x) = 0
+\end{equation}
+\begin{equation}
+    \label{eq35}
+    X(x) = A \cos \lambda x + B \sin \lambda x
+\end{equation}
+
+Получим решение исходного дифференциального уравнения:
+\begin{equation}
+    \label{eq36}
+    U(x, t) = (A \cos \lambda x + B \sin \lambda x)C e^{- \lambda^2 a t}
+\end{equation}
+
+Для нахождения констант интегрирования воспользуемся граничными и начальными условиями:
+\begin{equation}
+    \label{eq37}
+    \frac{\partial U}{\partial x}(0, t) = 0
+\end{equation}
+
+Из (\ref{eq36}) получим:
+\begin{equation}
+    \label{eq38}
+    \frac{\partial U}{\partial x}(x, t) = \left( B \lambda \cos \lambda x - A \lambda \sin \lambda x \right) T(t)
+\end{equation}
+
+Подставим (\ref{eq38}) в (\ref{eq37}):
+\begin{equation}
+    \label{eq39}
+    B \lambda T(t) = 0
+\end{equation}
+\begin{equation}
+    \label{eq40}
+    B = 0
+\end{equation}
+
+Получим:
+\begin{equation}
+    \label{eq41}
+    U(x, t) = A C \cos \lambda x \cdot e^{- \lambda^2 a t}
+\end{equation}
+
+Переобозначим константу:
+\begin{equation}
+    \label{eq42}
+    D = AC
+\end{equation}
+\begin{equation}
+    \label{eq43}
+    U(x, t) = D \cos \lambda x \cdot e^{- \lambda^2 a t}
+\end{equation}
+
+Второе граничное условие:
+\begin{equation}
+    \label{eq44}
+    \frac{\partial U}{\partial x} (l, t) + \beta U(l, t) = 0
+\end{equation}
+\begin{equation}
+    \label{eq45}
+    \frac{\partial U}{\partial x} (x, t) = - D \lambda \sin \lambda x \cdot T(t)
+\end{equation}
+
+Подставим (\ref{eq45}) в (\ref{eq44}):
+\begin{equation}
+    \label{eq46}
+    - D \lambda \sin \lambda l \cdot T(t) + \beta D \cos \lambda l T(t) = 0
+\end{equation}
+\begin{equation}
+    \label{eq47}
+    \lambda \sin \lambda l = \beta \cos \lambda l
+\end{equation}
+\begin{equation}
+    \label{eq48}
+    \tg \lambda l = \frac{\beta}{\lambda}
+\end{equation}
+
+Значения $\lambda$ должны удовлетворять выражению (\ref{eq48}). Поскольку таких значений бесконечно много можно воспользоваться свойством, что линейная комбинация решений дифференциального уравнения также является решением этого уравнения:
+\begin{equation}
+    \label{eq49}
+    U(x, t) = \sum_{n = 0}^{\infty} D_n \cos \lambda_n x \cdot e^{- \lambda_n^2 a t}
+\end{equation}
+
+Воспользуеся начальным условием:
+\begin{equation}
+    \label{eq50}
+    U(x, 0) = \phi (x)
+\end{equation}
+
+Для нахождения коэффициентов $D_n$ разложим функцию $\phi (x)$ в ряд по собственным функциям:
+\begin{equation}
+    \label{eq51}
+    \phi (x) = \sum_{n = 0}^{\infty} \Gamma_n \cos \lambda_n x
+\end{equation}
+\begin{equation}
+    \label{eq52}
+    \Gamma_n = \frac{2}{l} \int_{0}^{l} \phi(x) \cos \lambda_n x dx
+\end{equation}
+
+Подставим (\ref{eq51}) и (\ref{eq49}) в (\ref{eq50}):
+\begin{equation}
+    \label{eq53}
+    \sum_{n = 0}^{\infty} D_n \cos \lambda_n x = \sum_{n = 0}^{\infty} \Gamma_n \cos \lambda_n x
+\end{equation}
+
+Воспользуемся свойством ортогональности собственных функций:
+\begin{equation}
+    \label{eq54}
+    D_n = \Gamma_n = \frac{2}{l} \int_{0}^{l} \phi(x) \cos \lambda_n x dx
+\end{equation}
+
+Получим итоговое решение краевой задачи:
+\begin{equation}
+    \label{eq55}
+    U(x, t) = \sum_{n = 0}^{\infty} \left[ \left( \frac{2}{l} \int_{0}^{l} \phi(x) \cos \lambda_n x dx \right) \cos \lambda_n x \cdot e^{- \lambda_n^2 a t} \right]
+\end{equation}
