@@ -271,6 +271,8 @@ INPUT .\task.tex
 INPUT task.tex
 INPUT .\Рисунки\1.png
 INPUT .\Рисунки\1.png
+INPUT .\Рисунки\pic0.2.PNG
+INPUT .\Рисунки\pic0.2.PNG
 INPUT .\part1.tex
 INPUT .\part1.tex
 INPUT part1.tex
@@ -288,6 +290,12 @@ INPUT .\Рисунки\pic2.2.png
 INPUT .\Рисунки\pic2.2.png
 INPUT .\Рисунки\pic2.3.png
 INPUT .\Рисунки\pic2.3.png
+INPUT .\Рисунки\pic4.1.PNG
+INPUT .\Рисунки\pic4.1.PNG
+INPUT .\Рисунки\pic4.2.PNG
+INPUT .\Рисунки\pic4.2.PNG
+INPUT .\Рисунки\pic4.3.PNG
+INPUT .\Рисунки\pic4.3.PNG
 INPUT main.aux
 INPUT .\titlepage.aux
 INPUT .\titlepage.aux

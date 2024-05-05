@@ -391,47 +391,268 @@
 
 Аппроксимируем поле перемещений кусочно-линейными функциями:
 \begin{itemize}
-    \item Первый участок
+    \item Первый участок (первая половина $AB$)
     \begin{equation}
         \label{eq4.1}
-        u_I(x) = u_0 + \frac{u_1 - u_0}{2l}x, \;\; 0 \leq x \leq 2l
+        u_I(x) = u_0 + \frac{u_1 - u_0}{l}x, \;\;\; 0 \leq x \leq l
     \end{equation}
-    где $u_0 = u_I(0)$, $u_1 = u_I(2l)$.
-    \item Второй участок
-    Введем новую систему координат $O \tilde{x}$ с началом в точке $x = 2l$. Тогда
+    где $u_0 = u(0)$, $u_1 = u(l)$.
+    \item Второй участок (вторая половина $AB$) \\
+    Введем новую систему координат $O \tilde{x}$ с началом в точке $x = l$. Тогда
     \begin{equation}
         \label{eq4.2}
-        u_{II}(\tilde{x}) = u_1 + \frac{u_2 - u_1}{l} \tilde{x}, \;\; 0 \leq \tilde{x} \leq l
+        u_{II}(\tilde{x}) = u_1 + \frac{u_2 - u_1}{l} \tilde{x}, \;\;\; 0 \leq \tilde{x} \leq l
     \end{equation}
-    где $u_2 = u_{II}(3l)$.
+    где $u_2 = u(2l)$.
+    \item Третий участок ($BC$) \\
+    Введем новую систему координат $O \hat{x}$ с началом в точке $x = 2l$. Тогда
+    \begin{equation}
+        \label{eq4.2.1}
+        u_{III}(x) = u_2 + \frac{u_3 - u_2}{l} \hat{x}, \;\;\; 0 \leq \hat{x} \leq l
+    \end{equation}
+    где $u_3 = u(3l)$
 \end{itemize}
 
 Получим следующий функционал:
 \begin{equation}
     \label{eq4.3}
     \begin{split}
-        & \t{П} [u_I, u_{II}] = \frac{1}{2} \int_{0}^{2l} EF{u_I'}^2(x) dx + \frac{1}{2} \int_{0}^{l} EF{u_{II}'}^2(\tilde{x}) d\tilde{x} - \int_{0}^{2l} qu_I(x)dx +
+        & \t{П} [u_I, u_{II}, u_{III}] = \frac{1}{2} \int_{0}^{l} EF{u_I'}^2(x) dx + \frac{1}{2} \int_{0}^{l} EF{u_{II}'}^2(\tilde{x}) d\tilde{x} + \frac{1}{2} \int_{0}^{l} EF{u_{III}'}^2(\tilde{x}) d\tilde{x} - 
         \\
-        & + \frac{1}{2}cu_0^2 - F_2 u_1 - F_3 u_2
+        & - \int_{0}^{l} qu_I(x)dx - \int_{0}^{l} qu_{II}(\tilde{x})dx + \frac{1}{2}cu_0^2 - F_2 u_2 - F_3 u_3
     \end{split}
 \end{equation}
 
 Найдем производные функций перемещения:
 \begin{equation}
     \label{eq4.4}
-    u_I'(x) = \frac{u_1 - u_0}{2l}
+    u_I'(x) = \frac{u_1 - u_0}{l}
 \end{equation}
 \begin{equation}
     \label{eq4.5}
     u_{II}'(\tilde{x}) = \frac{u_2 - u_1}{l}
+\end{equation}
+\begin{equation}
+    \label{eq4.5.1}
+    u_{III}'(\hat{x}) = \frac{u_3 - u_2}{l}
 \end{equation}
 
 Подставим (\ref{eq4.4}) и (\ref{eq4.5}) в функционал (\ref{eq4.3}):
 \begin{equation}
     \label{eq4.6}
     \begin{split}
-        & \t{П}[u_I, u_{II}] = \frac{1}{2} EF \left[ \left( \frac{u_1 - u_0}{2l} \right)^2 + \left( \frac{u_2 - u_1}{l} \right) \right] - q \left( 2u_0l + \frac{u_1 - u_0}{2l} \frac{l^2}{2} \right) +
+        & \t{П}[u_0, u_1, u_2, u_3] = \frac{1}{2} EF \left[ \left( \frac{u_1 - u_0}{l} \right)^2 \cdot l + \left( \frac{u_2 - u_1}{l} \right)^2 \cdot l + \left( \frac{u_3 - u_2}{l} \right)^2 \cdot l \right] - 
         \\
-        & + \frac{1}{2}cu_0^2 - F_2u_1 - F_3u_2
+        & - q \left( (u_0 + u_1)l + \frac{u_2 - u_0}{l} \frac{l^2}{2} \right) + \frac{1}{2}cu_0^2 - F_2u_2 - F_3u_3
     \end{split}
+\end{equation}
+
+Запишем условие стационарности функционала (\ref{eq4.6}):
+\begin{equation}
+    \label{eq4.7}
+    \begin{cases}
+        \displaystyle \frac{\partial \t{П}}{\partial u_0} = 0
+        \\[10pt]
+        \displaystyle \frac{\partial \t{П}}{\partial u_1} = 0
+        \\[10pt]
+        \displaystyle \frac{\partial \t{П}}{\partial u_2} = 0
+        \\[10pt]
+        \displaystyle \frac{\partial \t{П}}{\partial u_3} = 0
+    \end{cases}
+\end{equation}
+
+Распишем выражения (\ref{eq4.7}):
+\begin{equation}
+    \label{eq4.8}
+    \frac{(u_1 - u_0)EF}{l} = u_0c - \frac{ql}{2}
+\end{equation}
+\begin{equation}
+    \label{eq4.8.1}
+    \frac{(2u_1 - u_0 - u_2)EF}{l} = ql
+\end{equation}
+\begin{equation}
+    \label{eq4.9}
+    \frac{(4u_2 - 2u_1 - 2u_3)EF}{2l} = F_2 + \frac{ql}{2}
+\end{equation}
+\begin{equation}
+    \label{eq4.10}
+    \frac{(u_3 - u_2)EF}{l} = F_3
+\end{equation}
+
+Из (\ref{eq4.8}) выразим $u_1$:
+\begin{equation}
+    \label{eq4.11}
+    u_1 = u_0 \left( 1 + \frac{cl}{EF} \right) - \frac{ql^2}{2EF}
+\end{equation}
+
+Подставим (\ref{eq4.11}) в (\ref{eq4.8.1}) и выразим $u_2$:
+\begin{equation}
+    \label{eq4.12}
+    u_2 = u_0 \left( 1 + \frac{2cl}{EF} \right) - \frac{2ql^2}{EF}
+\end{equation}
+
+Подставим (\ref{eq4.12}) и (\ref{eq4.11}) в (\ref{eq4.9}) и выразим $u_3$:
+\begin{equation}
+    \label{eq4.13}
+    u_3 = u_0 \left( 1 + \frac{3cl}{EF} \right) - \frac{4ql^2 + F_2l}{EF}
+\end{equation}
+
+Подставим (\ref{eq4.13}) в (\ref{eq4.12}) в (\ref{eq4.10}) и найдем $u_0$:
+\begin{equation}
+    \label{eq4.14}
+    u_0 = \frac{2ql + F_2 + F_3}{c}
+\end{equation}
+
+Найдем оставшиеся коэффициенты:
+\begin{equation}
+    \label{eq4.14.1}
+    u_1 = \frac{(3ql + 2F_2 + 2F_3)l}{2EF} + \frac{2ql + F_2 + F_3}{c}
+\end{equation}
+\begin{equation}
+    \label{eq4.15}
+    u_2 = \frac{(2ql + 2F_2 + 2F_3)l}{EF} + \frac{2ql + F_2 + F_3}{c}
+\end{equation}
+\begin{equation}
+    \label{eq4.15.1}
+    u_3 = \frac{(2ql + 2F_2 + 3F_3)l}{EF} + \frac{2ql + F_2 + F_3}{c}
+\end{equation}
+
+Подставим исходные данные (\ref{eq0.1}) в полученные выражения:
+\begin{equation}
+    \label{eq4.16}
+    u_0 = 0.386 l
+\end{equation}
+\begin{equation}
+    \label{eq4.17}
+    u_1 = 2.586 l
+\end{equation}
+\begin{equation}
+    \label{eq4.18}
+    u_2 = 3.786 l
+\end{equation}
+\begin{equation}
+    \label{eq4.18.1}
+    u_3 = 3.986 l
+\end{equation}
+
+Получим итоговые выражения для функций перемещений:
+\begin{equation}
+    \label{eq4.19}
+    u_I(x) = 2.2x + 0.386l, \;\;\; 0 \leq x \leq 2l
+\end{equation}
+\begin{equation}
+    \label{eq4.20}
+    u_{II}(\tilde{x}) = 1.2 \tilde{x} + 2.586 l, \;\;\; 0 \leq \tilde{x} \leq l
+\end{equation}
+или
+\begin{equation}
+    \label{eq4.21}
+    u_{II}(x) = 1.2x + 1.386 l, \;\;\; l \leq x \leq 2l
+\end{equation}\
+\begin{equation}
+    \label{eq4.21.1}
+    u_{III}(\hat{x}) = 0.2 \hat{x} + 3.786 l, \;\;\; 0 \leq \hat{x} \leq l
+\end{equation}
+или
+\begin{equation}
+    \label{eq4.21.2}
+    u_{III}(x) = 0.2 x + 3.386 l, \;\;\; 2l \leq x \leq 3l
+\end{equation}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic4.1.PNG}
+        \caption{График перемещений, полученных энергетическим и аналитическим методом}
+        \label{pic4.1}
+    \end{center}
+\end{figure}
+
+Найдем внутренние усилия:
+\begin{equation}
+    \label{eq4.22}
+    N(x) = EFu'(x)
+\end{equation}
+\begin{equation}
+    \label{eq4.23}
+    N_I(x) = 2.2 EF, \;\;\; 0 \leq x \leq l
+\end{equation}
+\begin{equation}
+    \label{eq4.24}
+    N_{II}(x) = 1.2EF, \;\;\; l \leq x \leq 2l
+\end{equation}
+\begin{equation}
+    \label{eq4.24.1}
+    N_{III}(x) = 0.2 EF, \;\;\; 2l \leq x \leq 3l
+\end{equation}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic4.2.PNG}
+        \caption{График нормальной силы, полученной энергетическим и аналитическим методами}
+        \label{pic4.2}
+    \end{center}
+\end{figure}
+
+Найдем нормальные напряжения:
+\begin{equation}
+    \label{eq4.25}
+    \sigma(x) = \frac{N(x)}{F}
+\end{equation}
+\begin{equation}
+    \label{eq4.26}
+    \sigma_I(x) = 2.2E, \;\;\; 0 \leq x \leq l
+\end{equation}
+\begin{equation}
+    \label{eq4.27}
+    \sigma_{II}(x) = 1.2E, \;\;\; l \leq x \leq 2l
+\end{equation}
+\begin{equation}
+    \label{eq4.27.1}
+    \sigma_{III}(x) = 0.2E, \;\;\; 2l \leq x \leq 3l
+\end{equation}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic4.3.PNG}
+        \caption{График нормальных напряжений, полученных энергетическим и аналитическим методами}
+        \label{pic4.3}
+    \end{center}
+\end{figure}
+
+\section{Оценка погрешности по энергии между точным и приближенным решением}
+
+Запишем выражение для функционала полной потенциальной энергии на приближенном решении:
+\begin{equation}
+    \label{eq5.1}
+    \begin{split}
+        & \t{П}[u_0, u_1, u_2, u_3] = \frac{1}{2} EF \left[ \left( \frac{u_1 - u_0}{l} \right)^2 \cdot l + \left( \frac{u_2 - u_1}{l} \right)^2 \cdot l + \left( \frac{u_3 - u_2}{l} \right)^2 \cdot l \right] - 
+        \\
+        & - q \left( (u_0 + u_1)l + \frac{u_2 - u_0}{l} \frac{l^2}{2} \right) + \frac{1}{2}cu_0^2 - F_2u_2 - F_3u_3
+    \end{split}
+\end{equation}
+
+Подставим в (\ref{eq5.1}) значения (\ref{eq4.16}), (\ref{eq4.17}), (\ref{eq4.18}) и (\ref{eq0.1}) и получим:
+\begin{equation}
+    \label{eq5.2}
+    \t{П}_\t{э} = \t{П}[u_0, u_1, u_2, u_3] = -3.68071 EFl
+\end{equation}
+
+Запишем выражение для функционала полной функциональной энергии на точном решении, используя выражения (\ref{eq2.13}):
+\begin{equation}
+    \label{eq5.3}
+    \begin{split}
+        & \t{П} [u_I, u_{II}] = \frac{1}{2} \int_{0}^{2l} EF{u_I'}^2 dx + \frac{1}{2} \int_{2l}^{3l} EF{u_{II}'}^2 dx - \int_{0}^{2l} qu_I dx + \frac{1}{2} cu_I^2(0) - F_2 u_I(2l) -
+        \\
+        & - F_3 u_{II}(3l)
+    \end{split}
+\end{equation}
+\begin{equation}
+    \label{eq5.4}
+    \t{П}_\t{а} = \t{П}[u_I, u_{II}] = -3.76405 EFl
+\end{equation}
+
+Расчитаем погрешность:
+\begin{equation}
+    \label{eq5.5}
+    \Delta = \Big| \frac{\t{П}_\t{э} - \t{П}_\t{а}}{\t{П}_\t{а}} \Big| \cdot 100 \% = 2.214 \%
 \end{equation}
