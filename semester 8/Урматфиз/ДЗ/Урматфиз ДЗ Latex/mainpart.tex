@@ -35,19 +35,19 @@
 На внутренней поверхности теплообмен происходит по закону Ньютона:
 \begin{equation}
     \label{eq3}
-    - \lambda_1 \frac{\partial U_1}{\partial r} \Big|_{r = R_1} = \alpha (U_1 - U_1\Big|_{r = R_1})
+    \lambda_1 \frac{\partial U}{\partial r} \Big|_{r = R_1} = \alpha (U\Big|_{r = R_1} - U_1)
 \end{equation}
 
 Запишем граничное условие для внешней поверхности:
 \begin{equation}
     \label{eq3.1}
-    U_2 \Big|_{r = R_\t{ст}} = U_2
+    U \Big|_{r = R_\t{ст}} = U_2
 \end{equation}
 
 Запишем условие сопряжения:
 \begin{equation}
     \label{eq4}
-    U_1 \Big|_{r = R_\t{ст} - 0} = U_2 \Big|_{r = R_\t{ст} + 0}
+    U \Big|_{r = R_\t{ст} - 0} = U \Big|_{r = R_\t{ст} + 0}
 \end{equation}
 
 Запишем условие равенства мощностей тепловых потоков через границу раздела двух слоев:
@@ -134,7 +134,7 @@
         \\[10pt]
         \displaystyle - \frac{C_3}{R_2} + C_4 = U_2
         \\[10pt]
-        \displaystyle - \lambda_1 \frac{C_1}{R_1^2} = \alpha \left( U_1 + \frac{C_1}{R_1} - C_2 \right)
+        \displaystyle \lambda_1 \frac{C_1}{R_1^2} = \alpha \left( C_2 - \frac{C_1}{R_1} - U_1\right)
     \end{cases}
 \end{equation}
 
@@ -153,25 +153,25 @@
 Из первого уравнения (\ref{eq16}) выразим $C_2$:
 \begin{equation}
     \label{eq19}
-    C_2 = \frac{\left( R_2 R_\t{ст} U_2 + C_1 R_2 \right) \lambda_2 + \left( C_1 R_\t{ст} - C_1 R_2 \right) \lambda_1}{R_2 R_\t{ст} \lambda_2}
+    C_2 = \frac{\lambda_2 R_2 \left( R_\t{ст} U_2 + C_1 \right) + C_1 \lambda_1 \left( R_\t{ст} - R_2 \right)}{R_2 R_\t{ст} \lambda_2}
 \end{equation}
 
 Из четвертого уравнения (\ref{eq16}) выразим $C_1$:
 \begin{equation}
     \label{eq20}
-    C_1 = \frac{\left( R_1^2 R_2 R_\t{ст} U_2 - R_1^2 R_2 R_\t{ст} U_1 \right) \alpha \lambda_2}{\left( R_2 R_\t{ст} \lambda_1 + \left( R_1 R_2 R_\t{ст} + R_1^2 R_2 \right) \alpha \right) \lambda_2 + \left( R_1^2 R_2 - R_1^2 R_\t{ст} \right) \alpha \lambda_1}
+    C_1 = \frac{\alpha \lambda_2 R_1^2 R_2 R_\t{ст} (U_2 - U_1)}{\lambda_2 \left( \lambda_1 R_2 R_\t{ст} + \alpha R_1 R_2 \left( R_\t{ст} - R_1 \right) \right) + \alpha \lambda_1 R_1^2 \left( R_2 - R_\t{ст} \right)}
 \end{equation}
 
 Тогда коэффициент $C_2$ равен:
 \begin{equation}
     \label{eq21}
-    C_2 = \frac{\left( R_2 R_\t{ст} U_2 \lambda_1 + \left( R_1 R_2 R_\t{ст} U_2 - R_1^2 R_2 U_1 \right) \alpha \right) \lambda_2 + \left( R_2 - R_\t{ст} \right) R_1^2 U_1 \alpha \lambda_1}{\left( R_2 R_\t{ст} \lambda_1 + \left( R_1 R_2 R_\t{ст} - R_1^2 R_2 \right) \alpha \right) \lambda_2 + \left( R_2 - R_\t{ст} \right) R_1^2 \alpha \lambda_1}
+    C_2 = \frac{\lambda_2 R_2 \left( R_\t{ст} U_2 \lambda_1 + \alpha R_1 \left( R_\t{ст} U_2 - R_1 U_1 \right) \right) + \left( R_2 - R_\t{ст} \right) R_1^2 U_1 \alpha \lambda_1}{\lambda_2 R_2 \left( R_\t{ст} \lambda_1 + \alpha R_1 \left( R_\t{ст} - R_1 \right) \right) + \left( R_2 - R_\t{ст} \right) R_1^2 \alpha \lambda_1}
 \end{equation}
 
 Подставим полученные коэффициенты в выражение (\ref{eq10}) и найдем его значение при $r = R_\t{ст}$:
 \begin{equation}
     \label{eq22}
-    U_\t{ст} = U_1(R_\t{ст}) = \frac{R_1^2 \alpha \lambda_1 \left( R_\t{ст} - R_2 \right) \left( U_2 - U_1 \right)}{\left( R_2 R_\t{ст} \lambda_1 + \left( R_1 R_2 R_\t{ст} - R_1^2 R_2 \right) \alpha \right) \lambda_2 + \left( R_2 - R_\t{ст} \right) R_1^2 \alpha \lambda_1} + U_2
+    U_\t{ст} = U_1(R_\t{ст}) = U_2 - \frac{\displaystyle \lambda_1 \left( 1 - \frac{R_\t{ст}}{R_2} \right) \left( U_2 - U_1 \right)}{\displaystyle \lambda_1 \left( 1 - \frac{R_\t{ст}}{R_2} \right) + \lambda_2 \left( \frac{R_\t{ст}}{R_1} - 1 \right) + \frac{\lambda_1 \lambda_2}{\alpha} \frac{R_\t{ст}}{R_1^2}}
 \end{equation}
 
 \section{Задача 2}

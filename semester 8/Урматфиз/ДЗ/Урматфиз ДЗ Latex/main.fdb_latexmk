@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1713771256 "main.xdv" "main.pdf" "main" 1713771258 0
-  "main.xdv" 1713771255 66256 310d8eb618a473a19c7e01764c028ca8 "xelatex"
+["xdvipdfmx"] 1715505664 "main.xdv" "main.pdf" "main" 1715505665 0
+  "main.xdv" 1715505663 66076 898fb9b0783c24b63f48970ccf9aa7b4 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1713771237 "d:/BMSTU github/semester 8/Урматфиз/ДЗ/Урматфиз ДЗ Latex/main.tex" "main.xdv" "main" 1713771258 0
+["xelatex"] 1715505645 "d:/BMSTU github/semester 8/Урматфиз/ДЗ/Урматфиз ДЗ Latex/main.tex" "main.xdv" "main" 1715505665 0
   "C:/Users/Александр/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1696529051 37437812 652f4bb97b51922ab60c116992bbb871 ""
   "D:/Programs/LaTex/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136761454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "D:/Programs/LaTex/fonts/tfm/jknappen/ec/tcrm0500.tfm" 993062506 1452 d4e3b17acac08070a568f62f3c020c49 ""
@@ -129,12 +129,12 @@
   "D:/Programs/LaTex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "D:/Programs/LaTex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "d:/BMSTU github/semester 8/Урматфиз/ДЗ/Урматфиз ДЗ Latex/main.tex" 1713709890 149 82231cb20d72fcab1477903196eeb416 ""
-  "main.aux" 1713771255 5484 3f7cc1760ebbf298a9d1d58e9ef74592 "xelatex"
-  "main.out" 1713771255 660 5d451b9d9984e7aac4b0c4f89ee835d0 "xelatex"
+  "main.aux" 1715505663 5484 3f7cc1760ebbf298a9d1d58e9ef74592 "xelatex"
+  "main.out" 1715505663 660 5d451b9d9984e7aac4b0c4f89ee835d0 "xelatex"
   "main.tex" 1713709890 149 82231cb20d72fcab1477903196eeb416 ""
-  "mainpart.tex" 1713771219 13893 9bdd70a8bc87f72ca06d6b24604a4bdb ""
+  "mainpart.tex" 1715505644 13835 a90dee777cfd85728c26407946be5491 ""
   "preamble.tex" 1713769442 3833 c71b20ea931e08c9f73a92d3ea83b440 ""
-  "titlepage.aux" 1713771248 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
+  "titlepage.aux" 1715505656 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
   "titlepage.tex" 1713709855 2448 fd7f345c02212ca551898196b36489a6 ""
   "Рисунки/pic1.PNG" 1713711914 42173 c95793d49604ac725b684432922f3755 ""
   "Рисунки/Герб МГТУ.png" 1696674641 116106 60599dd24c3b7f9f708464b075fdafb6 ""
