@@ -328,4 +328,144 @@
 
 \section{Расчет заданной конструкции с использованием пакета MSC Patran\_Nastran}
 
+Опишем порядок расчета в программном комплексе MSC Patran\_Nastran:
+\begin{enumerate}
+    \item Создание базы данных
+    
+    [File] $\rightarrow$ [New] $\rightarrow$ [Имя файла: dz2.db] $\rightarrow$ [Параметры анализа: Tolerance: Default, Analysis Code: MSC.Nastran, Analysis Type: Structural] $\rightarrow$ [Ok].
+
+    \item Создание геометрии модели
+    
+    Geometry $\rightarrow$ [Action: Create] $\rightarrow$ [Object: Curve] $\rightarrow$ [Method: XYZ] $\rightarrow$ [Vector Coordinate List: <1.5 0 0>] $\rightarrow$ [Origin Coordinate List <0 0 0>]
+
+    \item Создание сетки конечных элементов
+    
+    [Meshing] $\rightarrow$ [Action: Create] $\rightarrow$ [Object: Mesh] $\rightarrow$ [Type: Curve] $\rightarrow$ [Topology: Bar2] $\rightarrow$ [Curve List: Curve 1] $\rightarrow$ [Value: 0.5] $\rightarrow$ [Apply].
+
+    \item Сшивание конечных элементов вдоль геометрических границ
+    
+    [Meshing] $\rightarrow$ [Action: Equivalence] $\rightarrow$ [Object: All] $\rightarrow$ [Method: Tolerance Cube] $\rightarrow$ [Apply].
+
+    \item Задание свойств материала
+    
+    [Properties] $\rightarrow$ [Isotropic] $\rightarrow$ [Action: Create] $\rightarrow$ [Object: Isotropic] $\rightarrow$ [Method: Manual Input] $\rightarrow$ [Material Name: steel] $\rightarrow$ [Input Properties] $\rightarrow$ [Elastic Modulus: 7.31e10, Poisson’s Ratio: 0.33] $\rightarrow$ [OK] $\rightarrow$ [Apply].
+
+    \item Создание поперечного сечения 
+    
+    [Tools] $\rightarrow$ [Beam Library] $\rightarrow$ [Action: Create] $\rightarrow$ [Object: Standard Shape] $\rightarrow$ [Method: Nastran Standard] $\rightarrow$ [New Section Name: section] $\rightarrow$ [выбор круглого сечения] $\rightarrow$ [R1=0.15; R2=0.11] $\rightarrow$ [OK].
+
+    \item Применение созданных свойств к геометрии
+    
+    [Properties] $\rightarrow$ [1D Properties] $\rightarrow$ [Beam] $\rightarrow$ [Action: Create] $\rightarrow$ [Object: 1D] $\rightarrow$ [Type: Beam] $\rightarrow$ [Property Set Name: bar] $\rightarrow$ [Input Properties] $\rightarrow$ [Section name: section; Material Name: aluminium; Bar Orientation: <0 1 0>] $\rightarrow$ [OK] $\rightarrow$ [Select Application Region] $\rightarrow$ [Select: Entities] $\rightarrow$ [Select members: Curve 1] $\rightarrow$ [Add] $\rightarrow$ [OK] $\rightarrow$ [Apply].
+
+    \item Создание пружины
+    
+    [Properties] $\rightarrow$ [Action: Create] $\rightarrow$ [Object: 1D] $\rightarrow$ [Type: Spring] $\rightarrow$ [Property Set Name: spring] $\rightarrow$ [Input Properties] $\rightarrow$ [Spring constant: 3.344e10; Dof at Node 1: UX; Dof at Node 2: UX] $\rightarrow$ [OK] $\rightarrow$ [Select Application Region] $\rightarrow$ [Select: Entities] $\rightarrow$ [Select members: Curve 2] $\rightarrow$ [Add] $\rightarrow$ [OK] $\rightarrow$ [Apply].
+
+    \item Задание нагрузок, действующих на балку
+    
+    [Loads/BCs] $\rightarrow$ [Action: Create] $\rightarrow$ [Object: Distributed Load] $\rightarrow$ [Type: Element Uniform] $\rightarrow$ [New Set Name: raspr] $\rightarrow$ [Target Element Type: 1D] $\rightarrow$ [Input Data] $\rightarrow$ [Distr Load: <4.777e9 0 0>] $\rightarrow$ [Select Application Region] $\rightarrow$ [Select: FEM] $\rightarrow$ [Application Region: Element 1 2] $\rightarrow$ [Add] $\rightarrow$ [OK] $\rightarrow$ [Apply].
+
+    [Action: Create] $\rightarrow$ [Object: Force] $\rightarrow$ [Type: Nodal] $\rightarrow$ [New Set Name: F2] $\rightarrow$ [Input Data] $\rightarrow$ [Force: <1.194e9 0 0>] $\rightarrow$ [Select Application Region] $\rightarrow$ [Select: FEM] $\rightarrow$ [Application Region: Node 3] $\rightarrow$ [Add] $\rightarrow$ [OK] $\rightarrow$ [Apply].
+
+    [Action: Create] $\rightarrow$ [Object: Force] $\rightarrow$ [Type: Nodal] $\rightarrow$ [New Set Name: F3] $\rightarrow$ [Input Data] $\rightarrow$ [Force: <4.777e8 0 0>] $\rightarrow$ [Select Application Region] $\rightarrow$ [Select: FEM] $\rightarrow$ [Application Region: Node 4] $\rightarrow$ [Add] $\rightarrow$ [OK] $\rightarrow$ [Apply].
+
+    \item Задание граничных условий
+    
+    [Loads/BCs] $\rightarrow$ [Action: Create] $\rightarrow$ [Object: Displacement] $\rightarrow$ [Type: Nodal] $\rightarrow$ [New Set Name: dc1] $\rightarrow$ [Input Data] $\rightarrow$ [Translations: <0,0,0> Rotations: <0,0,0>] $\rightarrow$ [OK] $\rightarrow$ [Select Application Region] $\rightarrow$ [Select: Geometry] $\rightarrow$ [Select Geometry Entities: Point 5] $\rightarrow$ [Add] $\rightarrow$ [OK] $\rightarrow$ [Apply]
+
+    [Action: Create] $\rightarrow$ [Object: Displacement] $\rightarrow$ [Type: Nodal] $\rightarrow$ [New Set Name: dc2] $\rightarrow$ [Input Data] $\rightarrow$ [Translations: <,0,0> Rotations: <0,0,0>] $\rightarrow$ [OK] $\rightarrow$ [Select Application Region] $\rightarrow$ [Select: Geometry] $\rightarrow$ [Select Geometry Entities: Point 4] $\rightarrow$ [Add] $\rightarrow$ [OK] $\rightarrow$
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width = \linewidth]{pic7.1.PNG}
+            \caption{Модель стержня}
+            \label{pic7.1}
+        \end{center}
+    \end{figure}
+
+    \item Генерация фходного файла для расчета в MSC Nastran
+    
+    [Analysis] $\rightarrow$ [Action: Analyze] $\rightarrow$ [Object: Entire Model] $\rightarrow$ [Method: Full Run] $\rightarrow$ [Job Name: dz] $\rightarrow$ [Solution Type: Linear Static] $\rightarrow$ [Apply].
+
+    \item Передача результатов расчета в MSC Patran
+    
+    [Action: Access Results] $\rightarrow$ [Object: Attach HDF5 XDB] $\rightarrow$ [Method: Result Entities] $\rightarrow$ [Job Name: dz] $\rightarrow$ [Select Results File: dz.h5 xdb] $\rightarrow$ [OK] $\rightarrow$ [Apply].
+\end{enumerate}
+
+Получим графики перемещений и нормальных напряжений:
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic7.2.PNG}
+        \caption{График перемещений}
+        \label{pic7.2}
+    \end{center}
+\end{figure}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic7.3.PNG}
+        \caption{График нормальных напряжений}
+        \label{pic7.3}
+    \end{center}
+\end{figure}
+
 \section{Сравнительный анализ результатов, полученных методами, использованными в работе}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic4.1.PNG}
+        \caption{Сравнительный график аналитического и энергетического методов нахождения перемещений}
+        \label{pic7.3.1}
+    \end{center}
+\end{figure}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width = 0.7\linewidth]{pic4.2.PNG}
+        \caption{Сравнительный график аналитического и энергетического методов нахождения нормальных напряжений}
+        \label{pic7.3.2}
+    \end{center}
+\end{figure}
+
+Аналитическое решение дает результат на всем промежутке стрержня, в то время как энергетический метод и МКЭ дают результат только в конкретных точках, на которые разбивается модель. Для сравнения методов приведем таблицу со значениями перемещений и нормальных сил, полученными каждым методом:
+\begin{table}[H]
+    \caption{Сравнительная таблица перемещений}
+    \label{tab7.1}
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            Координата точки $x$, м & Аналитический метод & Энергетический метод & Patran \\
+            \hline
+            $0$ & $0.193$ & $0.192857$ & $0.1928439$ \\
+            \hline
+            $0.5$ & $1.293$ & $1.292857$ & $1.292854$ \\
+            \hline
+            $1$ & $1.893$ & $1.892857$ & $1.892836$ \\
+            \hline
+            $1.5$ & $1.993$ & $1.992857$ & $1.992841$ \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+\begin{table}[H]
+    \caption{Сравнительная таблица нормальных напряжений}
+    \label{tab7.2}
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            Координата точки, м & Аналитический метод & Энергетический метод и МКЭ & Patran \\
+            \hline
+            $0$ & $1.9737 \cdot 10^{11}$ & $1.6082 \cdot 10^{11}$ & $1.973735 \cdot 10^{11}$ \\
+            \hline
+            $0.5 - 0$ & $1.2427 \cdot 10^{11}$ & $1.6082 \cdot 10^{11}$ & $1.242694 \cdot 10^{11}$ \\
+            \hline
+            $0.5 + 0$ & $1.2427 \cdot 10^{11}$ & $8.772 \cdot 10^{10}$ & $1.242694 \cdot 10^{11}$ \\
+            \hline
+            $1 - 0$ & $5.117 \cdot 10^{10}$ & $8.772 \cdot 10^{10}$ & $5.116525 \cdot 10^{10}$ \\
+            \hline
+            $1 + 0$ & $1.462 \cdot 10^{10}$ & $1.462 \cdot 10^{10}$ & $1.462083 \cdot 10^{10}$ \\
+            \hline
+            $1.5$ & $1.462 \cdot 10^{10}$ & $1.462 \cdot 10^{10}$ & $1.462083 \cdot 10^{10}$ \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}

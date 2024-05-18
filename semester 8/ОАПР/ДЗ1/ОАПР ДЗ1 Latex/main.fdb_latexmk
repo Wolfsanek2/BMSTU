@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1715539816 "main.xdv" "main.pdf" "main" 1715539819 0
-  "main.xdv" 1715539816 143940 df1e0f927bdeebbe982c5aeeca540666 "xelatex"
+["xdvipdfmx"] 1715895747 "main.xdv" "main.pdf" "main" 1715895750 0
+  "main.xdv" 1715895745 193300 24e87468fa9fbd8910f2427068883598 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1715539783 "d:/BMSTU github/semester 8/ОАПР/ДЗ1/ОАПР ДЗ1 Latex/main.tex" "main.xdv" "main" 1715539819 0
+["xelatex"] 1715895704 "d:/BMSTU github/semester 8/ОАПР/ДЗ1/ОАПР ДЗ1 Latex/main.tex" "main.xdv" "main" 1715895750 0
   "C:/Users/Александр/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1696529051 37437812 652f4bb97b51922ab60c116992bbb871 ""
   "D:/Programs/LaTex/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136761454 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "D:/Programs/LaTex/fonts/tfm/jknappen/ec/tcrm0500.tfm" 993062506 1452 d4e3b17acac08070a568f62f3c020c49 ""
@@ -128,15 +128,15 @@
   "D:/Programs/LaTex/tex/latex/tools/tabularx.sty" 1686255640 7147 d80d8cf72d313443d08c13c1af59c90f ""
   "D:/Programs/LaTex/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "D:/Programs/LaTex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "d:/BMSTU github/semester 8/ОАПР/ДЗ1/ОАПР ДЗ1 Latex/main.tex" 1715532520 191 978110739f134ef9bfa064c8e9eac9ff ""
-  "main.aux" 1715539816 27835 b03510c787243ff7dea82e3b9fa25261 "xelatex"
-  "main.out" 1715539816 4611 94b680df03edea5410d43f62ec4ba8b6 "xelatex"
-  "main.tex" 1715532520 191 978110739f134ef9bfa064c8e9eac9ff ""
+  "d:/BMSTU github/semester 8/ОАПР/ДЗ1/ОАПР ДЗ1 Latex/main.tex" 1715895659 191 978110739f134ef9bfa064c8e9eac9ff ""
+  "main.aux" 1715895745 30938 70955e1dfcedf75c06b79d3a5211df77 "xelatex"
+  "main.out" 1715895745 4611 94b680df03edea5410d43f62ec4ba8b6 "xelatex"
+  "main.tex" 1715895659 191 978110739f134ef9bfa064c8e9eac9ff ""
   "part1.tex" 1714895796 22968 21315cce87f6e2abaa00265f9a3147e1 ""
-  "part2.tex" 1715539780 10275 85cf5ffadcce24259c6a842873bd1236 ""
+  "part2.tex" 1715895564 20113 290a3c127c5428833d60ea0c62e97b7e ""
   "preamble.tex" 1713769442 3833 c71b20ea931e08c9f73a92d3ea83b440 ""
-  "task.tex" 1714816922 2882 fc4c77558909eee3ae3f4c6d1c9340ba ""
-  "titlepage.aux" 1715539792 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
+  "task.tex" 1715869196 2886 4398f24ece57389976513cfb9a6fa33f ""
+  "titlepage.aux" 1715895715 726 7ebf26c156758dd0ca83a8bbda007103 "xelatex"
   "titlepage.tex" 1714553517 2492 0d2e9182cd7c25766e3c177d6cb013ec ""
   "Рисунки/1.png" 1700147514 14003 0e95f970572e15e21939d2fece43684d ""
   "Рисунки/pic0.2.PNG" 1714816637 18397 7ebfd7c1ba98f66decfd442b6c4c0afb ""
@@ -152,6 +152,9 @@
   "Рисунки/pic4.3.PNG" 1714894971 25930 ff3c6446cbe2ceb8b39e5745a4866f36 ""
   "Рисунки/pic6.1.PNG" 1700296007 17417 45592912c4297de7caedb1fb2d8f27ad ""
   "Рисунки/pic6.2.PNG" 1700298580 18572 e19249d1e262d7c593dde460b1408e2a ""
+  "Рисунки/pic7.1.PNG" 1715877688 2225 0885c7882383e9af633ecb217336c5e0 ""
+  "Рисунки/pic7.2.PNG" 1715889751 19738 3d71165a39f6532698f9f5b14afa8acc ""
+  "Рисунки/pic7.3.PNG" 1715889889 16646 018353ab78e335d9066076932015254c ""
   "Рисунки/Герб МГТУ.png" 1696674641 116106 60599dd24c3b7f9f708464b075fdafb6 ""
   (generated)
   "main.aux"
